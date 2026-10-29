@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ko"><head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#174b40"><title>지분의 도시 — 오프라인</title><meta name="description" content="부동산 증권화 보드게임. 혼자 플레이하고, AI의 투자를 관전하고, 규칙을 실험하세요."><style>
-500;600;700;800&display=swap');
 :root{--ink:#203b34;--green:#1d5748;--muted:#819089;--line:#e1e6df;--paper:#f5f6f0;--white:#fff;--a:#63927d;--b:#d6ad65;--c:#828da7;--d:#bb8f89;--p1:#28735d;--p2:#cc8f46;--p3:#777ca1;--p4:#c47d7d}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:13px/1.65 'Noto Sans KR',system-ui,sans-serif}button,input,select{font:inherit}button,a,select{ -webkit-tap-highlight-color:transparent}button{cursor:pointer;border:0;border-radius:7px;padding:10px 15px;background:transparent;color:inherit;transition:background .15s,transform .15s}button:hover{background:#e9eee7}button:active{transform:translateY(1px)}button:disabled{opacity:.4;cursor:default}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #bba874;outline-offset:3px}a{color:inherit;text-decoration:none}.topbar{height:88px;background:#fffdf8;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 4vw;gap:55px}.brand{display:flex;gap:12px;align-items:center;font-size:20px;font-weight:800;letter-spacing:-.8px}.brand-symbol{font-size:32px;width:40px;height:45px;color:var(--green);line-height:42px}.brand small{display:block;font-size:8px;letter-spacing:2px;font-weight:600;margin-top:-3px;color:#75857b}.topbar nav{height:100%;display:flex;gap:25px}.nav{border-radius:0;padding:0 4px;font-size:12px;color:#8a918a;position:relative}.nav.active{color:var(--green);font-weight:700}.nav.active:after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--green)}.header-end{margin-left:auto;display:flex;align-items:center;gap:22px}.version{font-size:9px;letter-spacing:1.4px;color:#86948a}.outline{border:1px solid #cfd9d1;background:transparent;font-size:12px;font-weight:600}.outline span{margin-left:12px}.primary{background:var(--green);color:#fff;font-weight:600}.primary:hover{background:#286a57}.full{width:100%}main{max-width:1530px;margin:auto;padding:32px 4vw 0}.page-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 28px}.eyebrow{font-size:9px;letter-spacing:1.8px;font-weight:700;color:#8b967e}h1{font-size:28px;letter-spacing:-1.5px;line-height:1.5;margin:7px 0}p{margin:6px 0 18px}.page-head p{color:#889187;font-size:12px;margin:3px 0}.session{display:grid;grid-template-columns:8px auto;gap:0 8px;font-size:11px;background:#ebefe6;padding:11px 18px;border:1px solid #dce4d7;border-radius:8px;align-items:center}.session small{grid-column:2;font-size:9px;color:#8c968a}.status-dot{width:6px;height:6px;background:#74946d;border-radius:50%}.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:26px}.metric{background:#fdfefb;border:1px solid var(--line);border-radius:9px;padding:14px 20px;display:flex;align-items:center;gap:14px}.metric-icon{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:#f0f3ea;font-size:17px;color:#8b9c76}.metric small{display:block;color:#8b9688;font-size:10px}.metric strong{font-size:21px;line-height:1.2;font-weight:600;font-variant-numeric:tabular-nums}.metric em{font-style:normal;font-size:10px;margin-left:6px;color:#9ba596}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 335px;gap:25px}.section-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;gap:8px}.section-bar h2{margin:0;font-size:13px;letter-spacing:-.3px}.section-bar h2 span{font-size:8px;font-weight:500;letter-spacing:1px;color:#9da692;margin-left:10px}#turn-label{font-size:10px;color:#8b9487}.board-scroll{padding:9px;border:1px solid #d9e1d5;background:#e9eee4;border-radius:13px;box-shadow:0 6px 25px #223e3410}.board{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(8,minmax(0,1fr));gap:4px;aspect-ratio:1}.tile{border-radius:4px;border:1px solid #dfe4d9;background:#fffef8;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:3px 2px;min-width:0;line-height:1.3;font-size:9px;box-shadow:0 1px 1px #00000003;overflow:hidden}.tile:hover{background:#fff}.tile.selected{outline:2px solid #578b70;outline-offset:-2px}.tile.current{background:#edf3e5;border-color:#91aa80}.tile .strip{position:absolute;left:0;right:0;top:0;height:4px}.tile.type-A .strip{background:var(--a)}.tile.type-B .strip{background:var(--b)}.tile.type-C .strip{background:var(--c)}.tile .tile-id{position:absolute;top:6px;left:5px;font-size:7px;color:#a8ad9d}.tile-name{font-size:10px;font-weight:700;letter-spacing:-.6px}.tile-price{color:#87917e;font-size:8px;margin-top:2px}.tile-level{font-size:6px;color:#7b9670;letter-spacing:1px;line-height:1.2}.tile.corner{background:#e3eadc;border-color:#d1dcc7}.corner-icon{font-size:18px;line-height:1.2;font-weight:500;color:#6e8762;margin-bottom:3px}.tokens{display:flex;gap:2px;justify-content:center;min-height:11px;margin-top:3px;flex-wrap:wrap}.token{color:#fff;font-size:6px;font-weight:800;border-radius:50%;min-width:11px;height:11px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 1px 2px #0002}.token.p0,.avatar.p0{background:var(--p1)}.token.p1,.avatar.p1{background:var(--p2)}.token.p2,.avatar.p2{background:var(--p3)}.token.p3,.avatar.p3{background:var(--p4)}.token.x{background:#53645e}.board-center{grid-row:2/8;grid-column:2/8;background:radial-gradient(ellipse at 50% 20%,#f7f9f0 0,#edf1e5 70%);border:1px solid #dbe3d2;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;padding:14px;overflow:hidden}.center-kicker{font-size:8px;letter-spacing:3px;color:#9eab8e}.skyline{display:flex;align-items:flex-end;justify-content:center;height:58px;gap:6px;margin:17px 0 13px;opacity:.65}.building{width:18px;background:linear-gradient(90deg,#bfceb0,#ccd7c1);position:relative;border-radius:2px 2px 0 0}.building:after{content:'';position:absolute;inset:6px 5px;background:repeating-linear-gradient(0deg,transparent 0 6px,#edf1e5 6px 8px)}.building:nth-child(1){height:29px;width:24px}.building:nth-child(2){height:43px}.building:nth-child(3){height:58px;width:24px}.building:nth-child(4){height:36px;width:20px}.building:nth-child(5){height:47px}.city-title{font-size:clamp(22px,2.4vw,37px);font-weight:800;letter-spacing:-2px;line-height:1.3;color:#375440}.city-subtitle{font-family:Georgia,serif;font-size:14px;font-style:italic;letter-spacing:2px;color:#97a38a;margin-top:6px}.center-rule{width:35px;height:1px;background:#c4cebb;margin:19px 0}.center-current{font-size:11px;font-weight:600;color:#728466}.center-phase{font-size:9px;color:#a0aa94;margin-top:3px}.dice-pair{display:flex;gap:9px;margin-top:15px}.die{width:37px;height:37px;border:1px solid #d7dfce;border-radius:7px;background:#fffef6;color:#6c805d;display:grid;place-items:center;font-size:30px;box-shadow:0 2px 4px #49603c0a}.center-bottom{position:absolute;bottom:18px;font-size:8px;color:#a5ae9b;letter-spacing:1px}.transport{display:flex;justify-content:space-between;align-items:center;padding:15px 0 11px;gap:8px}.transport-left{display:flex;gap:8px}.transport button{font-size:11px;padding:10px 13px}.icon-btn{font-size:20px!important;line-height:1}.speed{display:flex;align-items:center;gap:8px;color:#9aa18f;font-size:9px}select,input{border:1px solid #d9e0d4;border-radius:6px;background:#fffefb;color:var(--ink);padding:8px;width:100%;min-width:0}select{cursor:pointer}.speed select{width:86px;font-size:10px;padding:6px}.board-footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:8px;color:#a2aa99;border-bottom:1px solid var(--line);padding:0 0 18px}.legend{display:flex;gap:11px}.legend span{display:flex;align-items:center;gap:4px}.legend i{width:6px;height:6px;border-radius:2px}.a{background:var(--a)}.b{background:var(--b)}.c{background:var(--c)}.customer{background:#53645e}.panel{background:#fffefb;border:1px solid var(--line);border-radius:10px;padding:19px;margin-bottom:16px}.decision-panel{border-top:3px solid #5f8062;min-height:190px;background:#fafcf5}.panel-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.panel-heading .eyebrow{font-size:8px;letter-spacing:1.2px}#action-number{font-size:9px;color:#8c9e80}.decision-title{font-size:17px;margin:0 0 5px;font-weight:700;letter-spacing:-.7px}.decision-sub{font-size:11px;color:#87917c;line-height:1.8;margin-bottom:15px}.decision-actions{display:flex;gap:7px;flex-wrap:wrap}.decision-actions button{font-size:11px;padding:9px 12px}.decision-actions .primary{flex:1}.decision-actions .outline{background:#fffef8}.field{display:block;font-size:10px;color:#7d8977;margin:10px 0}.field input,.field select{display:block;margin-top:5px;font-size:12px}.hint{font-size:9px;color:#9b9f8e;line-height:1.7;margin:6px 0 10px}.player{padding:13px 0;border-bottom:1px solid #eef0e8}.player:last-child{border:0;padding-bottom:0}.player:first-child{padding-top:0}.player-line{display:flex;align-items:center;gap:10px}.avatar{color:white;border-radius:7px;width:30px;height:30px;font-size:10px;display:grid;place-items:center;font-weight:600}.player-name{font-size:11px;font-weight:600}.player-name small{font-size:9px;font-weight:400;color:#a0a894;margin-left:5px}.player-tag{font-size:8px;color:#80936f;background:#edf2e6;padding:1px 5px;margin-left:auto;border-radius:3px}.player-worth{font-size:15px;font-weight:600;letter-spacing:-.3px;margin-left:auto;font-variant-numeric:tabular-nums}.player-worth small{font-size:8px;color:#a0a894;font-weight:400;margin-right:5px}.player-details{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin:9px 0 0 40px;font-size:9px;color:#929b88}.player-details strong{display:block;color:#65775c;font-size:10px;font-weight:500}.warn{color:#b96e51!important}.tiny{font-size:9px;color:#9ba390}.property-title{font-size:14px;margin:0 0 4px}.property-sub{color:#939d88;font-size:10px}.holding-table{width:100%;border-collapse:collapse;margin-top:13px;font-size:10px;text-align:right}.holding-table th{color:#98a18c;font-size:9px;font-weight:400}.holding-table td,.holding-table th{padding:5px;border-bottom:1px solid #f0f2ea}.holding-table td:first-child,.holding-table th:first-child{text-align:left}.activity{padding-top:18px}.text-btn{padding:2px 0;color:#88977c;font-size:10px}.event{display:grid;grid-template-columns:40px 40px 1fr;gap:9px;font-size:10px;align-items:start;padding:10px 0;border-bottom:1px solid #e8ece2}.event small{font-size:9px;color:#a1aa96}.event-kind{font-size:8px;display:inline-block;text-align:center;background:#e9eee2;border-radius:3px;padding:2px 3px;color:#82916f}.event-text{color:#7a8870;line-height:1.8;overflow-wrap:anywhere}.hidden{display:none!important}footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:32px;padding:21px 0 25px;font-size:9px;color:#a0a895;gap:12px}footer i{margin:0 8px;font-style:normal}footer div{display:flex;gap:17px;align-items:center}footer button{font-size:9px!important}.wide{padding:30px;min-height:500px}.wide h2.large{font-size:27px;letter-spacing:-1px;margin:8px 0 30px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:25px 0 30px}.guide-grid b{font-size:14px}.guide-grid p{color:#8b9783;margin-top:10px;font-size:12px}.wide h3{font-size:15px;margin:30px 0 10px}.wide li{margin:7px 0;color:#7f8d76;font-size:12px}.wide ul,.wide ol{padding-left:20px}.muted{color:#8b9782;font-size:12px}.link-button{display:inline-block;margin-top:15px;padding:9px 15px}.roadmap li{padding:8px}.planned{color:#b2b9a9!important}#history-view select{width:115px;font-size:11px;margin-right:8px}.wide .event{grid-template-columns:65px 50px 1fr;font-size:12px}dialog{border:1px solid #d9e2d0;border-radius:14px;padding:32px;color:var(--ink);width:min(92vw,470px);background:#fffef8;box-shadow:0 20px 120px #17382e30}dialog::backdrop{background:#213b3380;backdrop-filter:blur(4px)}dialog h2{font-size:23px;letter-spacing:-1px;margin:8px 0 12px}dialog label{display:block;margin:20px 0;font-size:11px;font-weight:600}dialog label input,dialog label select{display:block;margin-top:7px;font-weight:400}.close{position:absolute;right:14px;top:9px;font-size:23px;padding:0 7px}#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(15px);opacity:0;pointer-events:none;background:#254d3e;color:#fff;padding:12px 22px;border-radius:8px;font-size:12px;max-width:90vw;z-index:99;transition:.2s}#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.trade-box{border-top:1px solid var(--line);margin-top:12px;padding-top:10px}.trade-box summary{font-size:10px;cursor:pointer;color:#88947c}.two-fields{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkbox{display:flex;align-items:center;gap:6px;font-size:10px;margin:10px 0}.checkbox input{width:auto}.bundle-list{max-height:160px;overflow:auto;margin-bottom:8px}.bundle-item{display:flex;align-items:center;gap:6px;padding:4px 0;font-size:9px}.bundle-item input{width:65px;margin-left:auto;padding:4px;font-size:10px}.result-row{display:flex;justify-content:space-between;padding:7px 0;font-size:12px}.mobile{display:none}.ai-badge{font-size:9px;color:#8c997e;border:1px solid #dce4d4;border-radius:4px;padding:2px 7px;display:inline-block;margin-bottom:9px}
 @media(min-width:1550px){main{padding-left:40px;padding-right:40px}.topbar{padding-left:max(4vw,calc((100vw - 1450px)/2))}}
 @media(max-width:1100px){.topbar{gap:28px;padding:0 25px}.topbar nav{gap:15px}.version{display:none}main{padding:26px 25px 0}.workspace{grid-template-columns:minmax(0,1fr) 300px;gap:18px}.panel{padding:16px}.city-title{font-size:27px}.skyline{margin:5px 0 10px}.center-rule{margin:12px 0}.tile-name{font-size:8px}.tile-price{font-size:7px}.corner-icon{font-size:14px}.metric{padding:12px;gap:9px}.board-center{padding:7px}.center-bottom{font-size:6px}.token{min-width:9px;height:9px;font-size:5px}.board{gap:3px}.center-kicker{font-size:6px}.dice-pair{margin-top:10px}.die{width:30px;height:30px;font-size:25px}}
@@ -143,6 +142,8 @@
 @media(max-width:850px){.rulebook-layout{grid-template-columns:1fr;gap:20px}.rule-toc{position:static;max-height:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px 12px}.rule-toc strong{grid-column:1/-1}.rule-toc a{font-size:10px}.help-start{gap:10px}.help-start li{padding:14px}.help-start p{font-size:11px}}
 @media(max-width:650px){.reading-heading{align-items:flex-start;flex-direction:column;gap:14px}.reading-heading .large{font-size:25px}.reading-heading p{font-size:11px}.rulebook-content{font-size:12px}.rulebook-content h3{font-size:18px}.rulebook-content h4{font-size:14px}.rule-toc{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px}.help-start,.help-grid{grid-template-columns:1fr}.help-start li{display:flex;gap:14px;padding:16px}.help-start li>span{flex-shrink:0;margin-top:3px}.help-start p{font-size:12px}.help-grid{gap:16px}}
 @media(max-width:560px){.topbar nav{gap:10px;justify-content:space-between}.nav{font-size:10px}.player-details>span strong{font-size:20px}#seed-label{max-width:75px}.reading-note{padding:11px 13px}.rulebook-view,.help-view{padding:18px 15px}.rulebook-content pre{padding:12px;font-size:10px}.rule-table th,.rule-table td{padding:8px;font-size:11px}}
+/* Per-seat AI composition */
+#setup{width:min(650px,94vw);max-height:92vh;overflow:auto}.ai-seat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin:15px 0}.ai-seat{min-width:0;padding:12px;border:1px solid var(--line);border-radius:8px;background:#f5f8ef}.ai-seat label{margin:0 0 5px}.ai-seat select{width:100%}.ai-seat .tiny{margin:8px 0 0;line-height:1.6}.ai-seat select:disabled{opacity:.5}@media(max-width:480px){.ai-seat-grid{grid-template-columns:1fr}#setup{padding:22px 18px}}
 
 .offline-note{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;padding:12px 16px;margin:0 0 20px;border:1px solid var(--line);border-radius:8px;background:#eef3e8;font-size:11px;color:#49644e}.offline-note strong{font-weight:700}.offline-note button{margin-left:auto;font-size:11px;color:var(--green)}
 
@@ -155,16 +156,87 @@
 .offline-commandbar #auto{min-width:142px}
 .offline-commandbar .speed{margin-left:auto;font-size:11px;color:#536a56}
 .offline-commandbar .speed select{width:100px;font-size:12px;padding:8px;min-height:40px}
+.progress-status{flex-basis:100%;font-size:11px;color:#49644e;margin-top:-3px}
 .offline-runtime-status{font-size:12px;line-height:1.8;color:#6a5536;background:#fff6df;border:1px solid #e4d2a5;border-radius:8px;padding:12px 16px;margin:0 0 18px}
 @media(max-width:1100px){.offline-command-title{flex-basis:100%}.offline-commandbar{gap:8px 14px}.offline-commandbar button{padding:10px 13px}}
 @media(max-width:560px){.offline-commandbar{padding:10px;margin-bottom:18px;gap:8px}.offline-command-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));flex-basis:100%;gap:7px}.offline-commandbar button{font-size:13px;padding:10px 7px;width:100%;min-width:0}.offline-commandbar #auto{min-width:0}.offline-commandbar .speed{width:100%;margin-left:0;justify-content:space-between}.offline-commandbar .speed select{width:124px}.topbar nav{gap:14px;flex-wrap:wrap}.offline-note{margin-bottom:12px}}
+
+/* Action controls only. Keep the v2 board, dice, navigation and portfolio styles. */
+.offline-commandbar button,
+#decision button,
+#auction-result-dialog button,
+#setup-form button[type="submit"],
+#save,
+#load,
+#legacy-save,
+#export-log,
+#export-finance {
+  background: #174b3c !important;
+  background-color: #174b3c !important;
+  color: #ffffff !important;
+  border: 1px solid #174b3c !important;
+  opacity: 1;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+.offline-commandbar button:not(:disabled):hover,
+.offline-commandbar button:not(:disabled):focus-visible,
+#decision button:not(:disabled):hover,
+#decision button:not(:disabled):focus-visible,
+#auction-result-dialog button:hover,
+#auction-result-dialog button:focus-visible,
+#setup-form button[type="submit"]:hover,
+#setup-form button[type="submit"]:focus-visible,
+#save:hover,
+#save:focus-visible,
+#load:hover,
+#load:focus-visible,
+#legacy-save:hover,
+#legacy-save:focus-visible,
+#export-log:hover,
+#export-log:focus-visible,
+#export-finance:hover,
+#export-finance:focus-visible {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #174b3c !important;
+  border-color: #174b3c !important;
+}
+.offline-commandbar button:disabled,
+#decision button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+.offline-commandbar #auto { white-space: normal; line-height: 1.3; }
+/* Clickable dice retain the v2 white face and green pips, including when idle. */
+#board .die:disabled { opacity: 1; cursor: default; }
+#board .die:not(:disabled) { cursor: pointer; }
+#board .die:not(:disabled):hover,
+#board .die:not(:disabled):focus-visible { outline: 2px solid #578b70; outline-offset: 2px; }
+
+#auction-result-dialog{width:min(900px,95vw);max-height:90vh;overflow:auto;padding:26px 28px;background:#fffef8}
+#auction-result-title{font-size:22px;margin:7px 20px 15px 0}
+.auction-result-status{padding:10px 14px;border-radius:7px;font-size:14px;font-weight:700;background:#e8f0e2;color:#20523b}
+.auction-result-status.failed{background:#f7eee0;color:#936941}
+.auction-result-kpis{display:flex;flex-wrap:wrap;gap:18px 32px;margin:18px 0;font-size:11px;color:#829078}
+.auction-result-kpis strong{display:block;margin-top:4px;font-size:21px;color:#294d39;font-variant-numeric:tabular-nums}
+#auction-result-body>p{font-size:12px;color:#66795f;line-height:1.8}
+.auction-result-table{overflow:auto;margin:15px 0}
+.auction-result-table table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+.auction-result-table th,.auction-result-table td{padding:10px;border-bottom:1px solid #e2e8db;text-align:right;white-space:nowrap}
+.auction-result-table thead th{background:#eef3e7;font-size:11px;font-weight:500;color:#77866d}
+.auction-result-table th:first-child,.auction-result-table td:first-child{text-align:left}
+.auction-result-table td:nth-child(2){max-width:260px;white-space:normal;overflow-wrap:anywhere}
+.auction-result-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px}
+.bid-error{padding:9px 11px;border-radius:5px;background:#fff0e4;border:1px solid #d9a780;color:#9b4b30;font-size:11px;line-height:1.7}
+@media(max-width:560px){#auction-result-dialog{padding:20px 16px}#auction-result-title{font-size:18px}.auction-result-table th,.auction-result-table td{padding:8px}.auction-result-footer{flex-wrap:wrap}.auction-result-footer button{width:100%}}
 
 </style></head>
 <body><header class="topbar"><a class="brand" href="#"><span class="brand-symbol">▥</span><span>지분의 도시<small>EQUITY CITY / GAME LAB</small></span></a><nav aria-label="화면"><button class="nav active" data-view="game">게임 테이블</button><button class="nav" data-view="finance">지분·재무</button><button class="nav" data-view="history">진행 기록</button><button class="nav" data-view="guide">규칙서</button><button class="nav" data-view="help">도움말</button></nav><div class="header-end"><span class="version">RULES 0.8</span></div></header>
 <main><div class="offline-note"><strong>오프라인 버전</strong><span>인터넷 없이 플레이 · 기본 P1 직접 조작 · AI 세 명과 대전</span><button type="button" data-view="help">도움말 ↗</button></div><section class="offline-commandbar" aria-label="게임 조작" id="offline-controls">
 <span class="offline-command-title">게임 시작·진행</span>
-<div class="offline-command-actions"><button type="button" class="outline" id="new">＋ 새 게임 만들기</button><button type="button" class="primary" id="auto">▶ 자동 진행</button><button type="button" class="outline" id="step">한 단계 진행 →</button><button type="button" class="outline" id="undo" title="한 단계 되돌리기" aria-label="한 단계 되돌리기">↶ 되돌리기</button></div>
+<div class="offline-command-actions"><button type="button" class="outline" id="new">＋ 새 게임 만들기</button><button type="button" class="primary" id="auto" aria-pressed="false">▶ 자동 진행</button><button type="button" class="outline" id="undo" title="한 단계 되돌리기" aria-label="한 단계 되돌리기">↶ 되돌리기</button></div>
 <label class="speed">진행 속도<select id="speed" aria-label="진행 속도"><option value="1500">보통</option><option value="650">빠르게</option><option value="100">매우 빠르게</option></select></label>
+<span id="progress-status" class="progress-status" role="status" aria-live="polite"></span>
 </section><p id="offline-runtime-status" class="offline-runtime-status" role="status">게임을 준비하고 있습니다. 이 안내가 계속 보이거나 버튼이 작동하지 않으면, 파일을 다운로드한 다음 Chrome 또는 Edge에서 여세요.</p><noscript><p class="offline-runtime-status">이 게임을 실행하려면 브라우저에서 JavaScript를 사용할 수 있어야 합니다. 파일을 다운로드한 다음 Chrome 또는 Edge에서 여세요.</p></noscript><section class="page-head"><div><div class="eyebrow">부동산 증권화 보드게임 · RULES v0.8</div><h1>도시는 돌아가고,<br class="mobile"> 지분은 움직입니다.</h1><p>투자하고, 의결하고, 다음 한 수를 관전하세요.</p></div><div class="session"><span class="status-dot"></span><span id="mode-label"></span><small id="seed-label"></small></div></section>
 <section id="legacy-notice" class="version-notice hidden"><div><strong>규칙 v0.8로 업데이트되었습니다.</strong><br>이전 v0.4 게임은 새 규칙과 호환되지 않아 별도로 보존했습니다. 새 게임은 v0.8로 시작합니다.</div><button id="legacy-save" class="outline">이전 게임 백업 ↓</button></section><div id="game-view"><div class="metric-row" id="metrics"></div><div class="workspace"><section class="table-area"><div class="section-bar"><h2>게임 보드 <span>28 TILES</span></h2><span id="turn-label"></span></div><div class="ownership-controls"><label>칸의 원그래프 <select id="ownership-mode"><option value="dividend">배당 지분 (보통+무의결권)</option><option value="votes">의결권 (보통주)</option></select></label><div class="owner-legend"><span><i style="background:#28735d"></i>P1</span><span><i style="background:#cc8f46"></i>P2</span><span><i style="background:#777ca1"></i>P3</span><span><i style="background:#c47d7d"></i>P4</span></div></div><div id="round-order" class="round-order" aria-label="이번 라운드 진행 순서"></div><div class="board-scroll"><div id="board" class="board"></div></div><div class="board-footer"><div class="legend"><span><i class="a"></i>A형</span><span><i class="b"></i>B형</span><span><i class="c"></i>C형</span><span><i class="d"></i>D형</span><span><i class="customer"></i>외부 고객 X</span></div><span>금액 표시: 소수 둘째 자리 · 통행료: 규칙상 정수화</span></div><section class="activity"><div class="section-bar"><h2>테이블 소식</h2><button class="text-btn" data-view="history">전체 기록 ↗</button></div><div id="recent"></div></section></section><aside><section class="panel decision-panel"><div class="panel-heading"><span class="eyebrow">CURRENT ACTION</span><span id="action-number"></span></div><div id="decision"></div></section><section class="panel"><div class="section-bar"><h2>플레이어 자산</h2><span class="tiny">모든 정보 공개</span></div><div id="players"></div><p id="player-cashflow-note" class="cashflow-note"></p></section><section class="panel property-panel"><div class="section-bar"><h2>부동산 살펴보기</h2><span class="tiny">칸을 선택하세요</span></div><div id="inspector" role="region" aria-label="선택한 칸 설명" aria-live="polite"></div></section></aside></div></div>
 <section id="finance-view" class="hidden finance-view"><div class="finance-heading"><div><span class="eyebrow">PORTFOLIO & LIVE FINANCIALS</span><h2>지분과 자금의 흐름</h2><p class="muted">게임의 차례를 시간축으로 사용합니다. 자동 진행 중에도 실시간으로 갱신됩니다.</p></div><div class="finance-toolbar"><label>플레이어<select id="finance-player"><option value="0">P1</option><option value="1">P2</option><option value="2">P3</option><option value="3">P4</option></select></label><button class="outline" id="export-finance">재무 기록 CSV ↓</button></div></div><p id="finance-coverage" class="coverage-note"></p><div id="finance-summary" class="finance-summary"></div><section class="panel"><div class="section-bar"><h2>시간에 따른 재무 지표</h2><span class="tiny">점에 마우스를 올리면 값을 확인할 수 있습니다</span></div><div class="chart-controls"><label>표시 지표<select id="finance-metric"><option value="income">누적 수입 (현금)</option><option value="expenses">누적 지출 (현금)</option><option value="invested">누적 투자액</option><option value="primary">신주 납입액</option><option value="salaryNet">월급 실수령액</option><option value="salaryGross">월급 총액</option><option value="externalIncome">외부 수입 (X 배당)</option><option value="dividends">총배당</option><option value="interest">발생 이자</option><option value="tolls">통행료 발생액</option><option value="cash">현금</option><option value="debt">부채</option><option value="equity">지분 평가액</option><option value="netWorth">순자산</option><option value="cityInvestment">도시 증축 투자액</option></select></label><label>집계 방식<select id="finance-period"><option value="cumulative">누적 / 잔액</option><option value="turn">차례별 변화</option></select></label><div id="finance-series" class="chart-series"></div></div><p id="finance-definition" class="hint"></p><div id="finance-main-chart"></div><div class="timeline-control"><label for="finance-scrub">관측 시점</label><input id="finance-scrub" type="range" min="0" max="0" value="0" aria-label="재무 기록 시점 선택"><button id="finance-latest" class="outline">실시간으로</button></div><div id="finance-readout" class="finance-readout"></div></section><div class="income-chart-grid"><section class="panel small-chart"><h3>월급 실수령액 누적</h3><div id="salary-chart"></div></section><section class="panel small-chart"><h3>외부 고객 X 배당 누적</h3><div id="external-chart"></div></section></div><section class="panel"><div class="section-bar"><h2 id="portfolio-title">보유 지분 명세</h2><label class="portfolio-filter">유형<select id="portfolio-type"><option value="all">전체</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label></div><p class="hint">보통주와 무의결권을 합친 배당 비율과, 보통주만의 의결권을 함께 표시합니다. 부동산 이름을 누르면 보드의 상세 명부로 이동합니다.</p><div id="portfolio-table"></div></section><section class="panel"><div class="section-bar"><h2>네 플레이어 재무 비교</h2><span class="tiny">수입·지출은 관측 시작 후 누적</span></div><div id="finance-flow-table" class="table-scroll"></div><p class="hint">묶음 경매는 주식과 부채의 혼합 거래이므로 대금을 투자액에 합산하지 않고 별도로 표시합니다. 기금 수령과 대납 대출도 X 배당에 포함하지 않습니다.</p></section></section>
@@ -1003,24 +1075,25 @@ def property_toll(T0, x):
 <div class="reading-heading"><div><span class="eyebrow">GETTING STARTED</span><h2 id="help-title" class="large">처음 플레이하나요?</h2><p>한 판 시작부터 지분과 재무 확인까지, 화면을 따라 익혀보세요.</p></div><button class="outline" data-view="game">← 게임으로 돌아가기</button></div>
 <p class="reading-note">도움말과 규칙서를 읽는 동안 자동 진행은 일시정지됩니다. 돌아온 뒤 <b>자동 진행</b>을 누르면 이어집니다.</p>
 <h3>먼저, 한 판 시작하기</h3>
-<ol class="help-start"><li><span>01</span><div><h4>새 게임을 엽니다</h4><p>상단 조작 바의 <b>새 게임 만들기</b>에서 플레이 방식을 선택하세요. 처음에는 <b>직접 플레이</b>로 P1을 조작하거나 <b>AI 관전</b>으로 흐름을 살펴보면 좋습니다.</p></div></li><li><span>02</span><div><h4>시드를 확인하고 시작합니다</h4><p>시드는 매번 무작위로 채워집니다. 그대로 시작하면 새로운 판이 열립니다. 특정 판을 재현하려면 원하는 시드를 직접 입력하세요. 같은 시드와 같은 선택은 같은 진행을 만듭니다.</p></div></li><li><span>03</span><div><h4>한 단계씩 진행합니다</h4><p><b>한 단계 →</b>로 이동과 AI 행동을 살펴보세요. 사람의 선택이 필요한 단계에서는 <b>현재 행동</b> 영역에서 주사위·매수·의결·입찰 등을 확정합니다. <b>자동 진행</b>도 사람의 선택 앞에서 기다립니다.</p></div></li></ol>
+<ol class="help-start"><li><span>01</span><div><h4>새 게임을 엽니다</h4><p>상단 조작 바의 <b>새 게임 만들기</b>에서 플레이 방식을 선택하세요. 처음에는 <b>직접 플레이</b>로 P1을 조작하거나 <b>AI 관전</b>으로 흐름을 살펴보면 좋습니다.</p></div></li><li><span>02</span><div><h4>시드를 확인하고 시작합니다</h4><p>시드는 매번 무작위로 채워집니다. 그대로 시작하면 새로운 판이 열립니다. 특정 판을 재현하려면 원하는 시드를 직접 입력하세요. 같은 시드와 같은 선택은 같은 진행을 만듭니다.</p></div></li><li><span>03</span><div><h4>주사위와 선택으로 진행합니다</h4><p><b>자동 진행</b>을 켜면 AI 행동과 차례 전환이 이어집니다. 내 이동 차례에는 <b>보드 가운데 주사위</b>를 누르고, 매수·의결·입찰은 <b>현재 행동</b> 영역에서 확정하세요. 사람의 선택을 기다리는 동안에도 자동 진행은 켜져 있으며, 선택을 마치면 이어집니다.</p></div></li></ol>
 <div class="help-grid"><article><h3>플레이 방식 고르기</h3><dl><dt>직접 플레이</dt><dd>P1은 직접 조작하고 P2~P4는 AI가 맡습니다.</dd><dt>AI 관전</dt><dd>네 AI의 선택을 관전합니다. 진행 속도를 바꾸거나 일시정지할 수 있습니다.</dd><dt>전체 조작</dt><dd>한 사람이 P1~P4의 거래·의결·입찰을 모두 입력합니다. 각 단계에 표시된 플레이어를 확인하세요.</dd></dl></article>
 <article><h3>보드와 플레이어 카드 읽기</h3><ul><li>칸을 누르면 아래의 <b>부동산 살펴보기</b>에서 통행료·지분 명부·발행 조건을 확인합니다. 코너도 같은 영역에 설명이 나옵니다.</li><li>원그래프는 플레이어별 소유 비율입니다. <b>배당 지분</b>과 <b>의결권</b>을 전환할 수 있습니다.</li><li>말은 칸 왼쪽 아래부터 도착한 순서로 표시됩니다. X는 외부 고객입니다.</li><li>카드의 <b>보유 지분</b>을 누르면 24개 자산의 보유 현황을 한눈에 봅니다. <b>플레이어 이름</b>을 누르면 그 사람의 재무 화면으로 갑니다.</li></ul></article>
 <article><h3>거래·의결·입찰 입력하기</h3><ul><li><b>개인 거래</b>: 상대·자산·지분 종류·수량·총대금을 입력합니다. 거래가 끝나면 도착 처리를 계속하세요.</li><li><b>의결</b>: 보통주 주주가 찬성·반대·기권을 선택합니다. 현재 보통주의 과반 찬성이 필요합니다.</li><li><b>신주 입찰</b>: <code>50, 40, 30</code>처럼 주당 가격을 나열합니다. <code>50×3</code>은 50짜리 표 3장입니다. 빈칸은 포기이며, 제출 전 수량과 현금을 확인하세요.</li><li><b>묶음 입찰</b>: 묶음 전체의 가격을 입력합니다. <code>0</code>도 입찰이며 빈칸인 포기와 다릅니다. 음수 가격은 매도자가 낙찰자에게 지급합니다.</li></ul></article>
 <article><h3>지분·재무 화면 활용하기</h3><ul><li><b>플레이어</b>와 <b>유형</b>을 골라 지분 명세를 확인합니다.</li><li>그래프에서 <b>총 투자액·월급·외부 고객 수입</b> 등 지표를 선택하고 플레이어별 선을 켜고 끕니다.</li><li><b>누적 / 차례별 변화</b>를 전환하고 시간 슬라이더로 과거를 살펴봅니다. <b>실시간</b>으로 돌아오면 최신 값을 봅니다.</li><li>누적 수입·지출은 실제 현금 흐름입니다. 초기 현금과 은행 대납은 수입에서 제외합니다. 상세 정의는 지표 설명에 표시됩니다.</li></ul><button class="text-btn" data-view="finance">지분·재무 열기 →</button></article>
 <article><h3>저장·복원과 되돌리기</h3><ul><li>진행 상황은 가능한 경우 이 브라우저에 자동 저장됩니다. 오래 보관하거나 파일 위치·브라우저·기기를 바꿀 때는 JSON으로 따로 저장하세요.</li><li>화면 아래 <b>JSON 저장</b>으로 백업하고, <b>불러오기</b>로 복원하거나 다른 기기로 옮깁니다.</li><li><b>↶</b>는 최근 80단계 안에서 한 단계씩 되돌립니다.</li><li>새 게임을 시작하면 현재 판이 교체됩니다. 이어서 할 게임은 먼저 저장하세요.</li></ul></article>
 <article><h3>기억할 규칙 세 가지</h3><ul><li>통행료는 전액 지급한 뒤 지분대로 배당됩니다. 현금 부족분은 개인 부채가 됩니다.</li><li>출발점에서는 <b>기존 현금으로 원금 상환 → 이자 30%와 월급 100 정산 → 경고</b> 순서입니다.</li><li>이자가 100 이상이면 경고입니다. <b>두 번째 연속 경고</b>가 나오면 전체 게임이 즉시 끝나고 해당 플레이어는 4위가 됩니다.</li></ul><button class="text-btn" data-view="guide">규칙서 전문 읽기 →</button></article></div>
-<details class="help-faq"><summary>AI와 시드는 어떻게 동작하나요?</summary><p>새 게임에서 실험용 v1 전략 또는 기존 AI를 고릅니다. v1의 높은 승률은 아직 검증되지 않아 기본값은 기존 AI입니다. v1은 공개된 지분·현금으로 예상 배당 가치와 조달 가능성을 계산해 의결하고, 부채가 위험하면 상환 현금을 남깁니다. 미래 주사위와 다른 사람의 비공개 입찰은 읽지 않습니다. 일반 지분 거래를 먼저 제안하지는 않습니다. AI 설정이 없는 이전 저장은 기존 AI로 이어집니다. 시드는 초기 추첨과 주사위 난수를 정하지만, 선택에 따라 이후 진행은 달라집니다. 새로고침이나 저장 복원은 기존 판의 시드를 유지합니다.</p></details>
+<details class="help-faq"><summary>AI와 시드는 어떻게 동작하나요?</summary><p>새 게임에서 전략가·확장가·가치투자자·수비가를 자리마다 고르거나 무작위로 편성합니다. 전략가는 상대의 이득, 확장가는 보통주 성장과 의결권, 가치투자자는 가격 대비 수익과 무의결권, 수비가는 현금과 부채 위험을 우선합니다. 성향은 난이도 순서가 아닙니다. 새 AI는 입찰가를 비교하고 불리한 안건에 반대하며, 현금과 부채가 위험하면 다른 AI에게 지분 매각을 제안합니다. 상대 AI도 가격과 지급 여력을 확인해야 거래가 성립합니다. 미래 주사위와 비공개 입찰은 읽지 않습니다. 기존 AI와 실험용 v1도 비교용으로 선택할 수 있으며, 이전 저장은 당시 전략을 그대로 유지합니다. 무작위 편성은 가능한 한 중복 없이 배정하고, 같은 시드와 같은 선택으로 재현됩니다. 배정용 난수는 게임 주사위와 분리됩니다. 저장·복원·되돌리기는 배정된 성향을 유지합니다. 시드가 같아도 플레이 중 선택이 다르면 이후 주사위 사용 순서와 진행이 달라질 수 있습니다.</p></details>
 <div class="reading-footer"><button class="primary" data-view="game">게임 테이블로 →</button><button class="outline" data-view="guide">규칙서 읽기</button></div></section>
 
 <footer><span>지분의 도시 <i>·</i> 오프라인 · 1인 플레이 & AI 관전</span><div><span id="save-status">브라우저 자동 저장</span><button id="save" class="text-btn">JSON 저장 ↓</button><button id="load" class="text-btn">불러오기 ↑</button><input type="file" id="file" accept="application/json,.json" hidden></div></footer></main>
-<dialog id="portfolio-dialog" class="portfolio-dialog" aria-labelledby="portfolio-dialog-title"><button type="button" id="close-portfolio" class="close" aria-label="보유 지분 닫기">×</button><div class="portfolio-dialog-heading"><div><span class="eyebrow">PORTFOLIO AT A GLANCE</span><h2 id="portfolio-dialog-title">보유 지분 한눈에 보기</h2></div><div id="portfolio-dialog-tabs" class="portfolio-dialog-tabs" aria-label="지분을 볼 플레이어"></div></div><p class="hint">색이 있는 자산은 보유 중입니다. 비율은 보통주와 무의결권을 합친 배당 지분입니다. 자산을 누르면 상세 명부를 볼 수 있습니다.</p><div id="portfolio-overview"></div><div class="portfolio-dialog-footer"><span class="tiny">열람 중에는 자동 진행이 일시정지됩니다.</span><button type="button" id="portfolio-finance" class="outline">지분 명세와 재무 자세히 →</button></div></dialog>
-<dialog id="setup"><form id="setup-form"><button class="close" type="button" id="close-setup" aria-label="닫기">×</button><span class="eyebrow">A NEW TABLE</span><h2>새로운 도시를 시작하세요.</h2><p class="muted">기존 게임은 새 게임을 시작하면 교체됩니다.<br>이어서 할 게임은 먼저 JSON으로 저장하세요.</p><label>플레이 방식<select id="new-mode"><option value="observe">AI 관전 — 네 AI의 플레이 지켜보기</option><option value="play" selected>직접 플레이 — P1 + AI 세 명</option><option value="director">전체 조작 — 네 플레이어 직접 입력</option></select></label><label>AI 전략<select id="new-ai"><option value="balanced-v1">균형형 v1 · 실험 (네 AI 동일)</option><option value="cautious-v1">신중형 v1 · 실험 (네 AI 동일)</option><option value="growth-v1">성장형 v1 · 실험 (네 AI 동일)</option><option value="legacy" selected>기존 AI 네 성향 (기본)</option></select></label><label>게임 시드<input id="new-seed" maxlength="80" autocomplete="off" spellcheck="false" placeholder="비워 두면 무작위 생성" aria-describedby="seed-help"></label><p class="tiny" id="seed-help">새 게임마다 시드를 무작위로 채웁니다. 원하는 시드로 바꿀 수 있으며, 빈칸도 무작위 생성합니다. 같은 시드와 같은 선택은 같은 진행을 재현합니다.</p><button class="primary full" type="submit">게임 시작 →</button></form></dialog><div id="toast" role="status" aria-live="polite"></div><script>
+<dialog id="auction-result-dialog" aria-labelledby="auction-result-title"><button type="button" id="close-auction-result" class="close" aria-label="경매 결과 닫기">×</button><span class="eyebrow">AUCTION RESULT</span><h2 id="auction-result-title">경매 결과</h2><div id="auction-result-body"></div><div class="auction-result-footer"><span class="tiny">결과 확인 중에는 다음 행동이 진행되지 않습니다.</span><button type="button" id="continue-auction-result" class="primary">확인하고 계속 →</button></div></dialog><dialog id="portfolio-dialog" class="portfolio-dialog" aria-labelledby="portfolio-dialog-title"><button type="button" id="close-portfolio" class="close" aria-label="보유 지분 닫기">×</button><div class="portfolio-dialog-heading"><div><span class="eyebrow">PORTFOLIO AT A GLANCE</span><h2 id="portfolio-dialog-title">보유 지분 한눈에 보기</h2></div><div id="portfolio-dialog-tabs" class="portfolio-dialog-tabs" aria-label="지분을 볼 플레이어"></div></div><p class="hint">색이 있는 자산은 보유 중입니다. 비율은 보통주와 무의결권을 합친 배당 지분입니다. 자산을 누르면 상세 명부를 볼 수 있습니다.</p><div id="portfolio-overview"></div><div class="portfolio-dialog-footer"><span class="tiny">열람 중에는 자동 진행이 일시정지됩니다.</span><button type="button" id="portfolio-finance" class="outline">지분 명세와 재무 자세히 →</button></div></dialog>
+<dialog id="setup"><form id="setup-form"><button class="close" type="button" id="close-setup" aria-label="닫기">×</button><span class="eyebrow">A NEW TABLE</span><h2>새로운 도시를 시작하세요.</h2><p class="muted">기존 게임은 새 게임을 시작하면 교체됩니다.<br>이어서 할 게임은 먼저 JSON으로 저장하세요.</p><label>플레이 방식<select id="new-mode"><option value="observe">AI 관전 — 네 AI의 플레이 지켜보기</option><option value="play" selected>직접 플레이 — P1 + AI 세 명</option><option value="director">전체 조작 — 네 플레이어 직접 입력</option></select></label><label>AI 편성<select id="new-ai"><option value="random">전체 무작위</option><option value="mixed">네 가지 성향 한 명씩</option><option value="custom">자리별 직접 선택</option><optgroup label="같은 성향으로 통일"><option value="strategist-v2">전략가</option><option value="builder-v2">확장가</option><option value="investor-v2">가치투자자</option><option value="guardian-v2">수비가</option></optgroup><optgroup label="이전 전략 비교"><option value="legacy">기존 AI 네 성향</option><option value="legacy-balanced">기존 균형형</option><option value="legacy-cautious">기존 신중형</option><option value="legacy-growth">기존 적극형</option><option value="legacy-reserve">기존 유보형</option><option value="balanced-v1">균형형 v1 · 실험</option><option value="cautious-v1">신중형 v1 · 실험</option><option value="growth-v1">성장형 v1 · 실험</option></optgroup></select></label><div class="ai-seat-grid"><div class="ai-seat"><label for="new-ai-0" id="ai-seat-0">P1 · AI</label><select id="new-ai-0" aria-describedby="ai-description-0"><option value="random">무작위</option><option value="strategist-v2">전략가</option><option value="builder-v2">확장가</option><option value="investor-v2">가치투자자</option><option value="guardian-v2">수비가</option><optgroup label="이전 전략 비교"><option value="legacy-balanced">기존 균형형</option><option value="legacy-cautious">기존 신중형</option><option value="legacy-growth">기존 적극형</option><option value="legacy-reserve">기존 유보형</option><option value="balanced-v1">균형형 v1 · 실험</option><option value="cautious-v1">신중형 v1 · 실험</option><option value="growth-v1">성장형 v1 · 실험</option></optgroup></select><p class="tiny" id="ai-description-0"></p></div><div class="ai-seat"><label for="new-ai-1" id="ai-seat-1">P2 · AI</label><select id="new-ai-1" aria-describedby="ai-description-1"><option value="random">무작위</option><option value="strategist-v2">전략가</option><option value="builder-v2">확장가</option><option value="investor-v2">가치투자자</option><option value="guardian-v2">수비가</option><optgroup label="이전 전략 비교"><option value="legacy-balanced">기존 균형형</option><option value="legacy-cautious">기존 신중형</option><option value="legacy-growth">기존 적극형</option><option value="legacy-reserve">기존 유보형</option><option value="balanced-v1">균형형 v1 · 실험</option><option value="cautious-v1">신중형 v1 · 실험</option><option value="growth-v1">성장형 v1 · 실험</option></optgroup></select><p class="tiny" id="ai-description-1"></p></div><div class="ai-seat"><label for="new-ai-2" id="ai-seat-2">P3 · AI</label><select id="new-ai-2" aria-describedby="ai-description-2"><option value="random">무작위</option><option value="strategist-v2">전략가</option><option value="builder-v2">확장가</option><option value="investor-v2">가치투자자</option><option value="guardian-v2">수비가</option><optgroup label="이전 전략 비교"><option value="legacy-balanced">기존 균형형</option><option value="legacy-cautious">기존 신중형</option><option value="legacy-growth">기존 적극형</option><option value="legacy-reserve">기존 유보형</option><option value="balanced-v1">균형형 v1 · 실험</option><option value="cautious-v1">신중형 v1 · 실험</option><option value="growth-v1">성장형 v1 · 실험</option></optgroup></select><p class="tiny" id="ai-description-2"></p></div><div class="ai-seat"><label for="new-ai-3" id="ai-seat-3">P4 · AI</label><select id="new-ai-3" aria-describedby="ai-description-3"><option value="random">무작위</option><option value="strategist-v2">전략가</option><option value="builder-v2">확장가</option><option value="investor-v2">가치투자자</option><option value="guardian-v2">수비가</option><optgroup label="이전 전략 비교"><option value="legacy-balanced">기존 균형형</option><option value="legacy-cautious">기존 신중형</option><option value="legacy-growth">기존 적극형</option><option value="legacy-reserve">기존 유보형</option><option value="balanced-v1">균형형 v1 · 실험</option><option value="cautious-v1">신중형 v1 · 실험</option><option value="growth-v1">성장형 v1 · 실험</option></optgroup></select><p class="tiny" id="ai-description-3"></p></div></div><p class="tiny">무작위 배정은 새 AI 네 종류를 가능한 한 중복 없이 고릅니다. 배정 결과는 플레이어 카드에 표시되며 저장 후에도 유지됩니다. AI 성향은 난이도 순서가 아닙니다.</p><label>게임 시드<input id="new-seed" maxlength="80" autocomplete="off" spellcheck="false" placeholder="비워 두면 무작위 생성" aria-describedby="seed-help"></label><p class="tiny" id="seed-help">새 게임마다 시드를 무작위로 채웁니다. 원하는 시드로 바꿀 수 있으며, 빈칸도 무작위 생성합니다. 같은 시드와 같은 선택은 같은 진행을 재현합니다.</p><button class="primary full" type="submit">게임 시작 →</button></form></dialog><div id="toast" role="status" aria-live="polite"></div><script>
 (()=>{
 'use strict';
 const __modules={
 "app.js":function(exports,__require){
-const {policyLabel,policyFor}=__require("ai.js");
+const {makeAuctionResult,renderAuctionResult,parseAuctionBids,parseAuctionPrice}=__require("auction-results.js");
+const {policyLabel,policyFor,AI_CHOICES,LEGACY_POLICIES,PROFILES}=__require("ai.js");
 const {createGame,advance,aiAction,assertState,ACTORS,CORNERS,TYPES,phaseNames,property,decider,isHuman,total,sold,toll,investment,expansion,roundOrder,ensureFinance,balanceSnapshot,worth,rankings,q,cmp,min,fmt,mul,div}=__require("engine.js");
 const {STORAGE_KEY:KEY,LEGACY_KEY,saveData,readSave}=__require("persistence.js");
 const {COLORS,ownership,METRICS,chartSeries,lineChart,holdings,portfolioOverview,aggregateBalance}=__require("dashboard.js");
@@ -1031,16 +1104,51 @@ const {boardMarkers}=__require("markers.js");
 const {randomSeed}=__require("seed.js");
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MODE={observe:'AI 관전',play:'직접 플레이 · P1',director:'전체 조작'};
-let state=createGame(randomSeed(),'play'),snapshots=[],running=false,timer=null,selected=1,view='game',toastTimer;
+let state=createGame(randomSeed(),'play',{preset:'mixed'}),snapshots=[],running=false,timer=null,selected=1,view='game',toastTimer;
 let financePlayer=0,ownershipMode='dividend',financeMetric='invested',financePeriod=false,financeIds=new Set([0,1,2,3]),financeCursor=null;let portfolioPlayer=0;
 let legacyRaw=null;try{legacyRaw=localStorage.getItem(LEGACY_KEY)}catch{}
 try{const saved=localStorage.getItem(KEY);if(saved){const parsed=JSON.parse(saved);assertState(parsed);assertFinance(parsed.finance,true);state=parsed}}catch{}
 ensureFinance(state);
 function toast(t){$('toast').textContent=t;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),4200)}
 function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));$('save-status').textContent='브라우저 자동 저장됨'}catch{$('save-status').textContent='자동 저장을 사용할 수 없음 · JSON 저장을 이용하세요'}}
-function stop(){running=false;clearTimeout(timer);timer=null;$('auto').textContent='▶ 자동 진행'}
-function commit(a){try{const next={...state};advance(next,a);assertState(next);snapshots.push(state);if(snapshots.length>80)snapshots.shift();state=next;persist();render();if(state.ended)stop();return true}catch(e){stop();toast(e.message);render();return false}}
-function tick(){if(!running)return;if(state.ended){stop();return}const j=decider(state);if(j!==null&&isHuman(state,j)){stop();render();toast(`${state.players[j].id}의 선택을 기다립니다.`);return}if(commit(aiAction(state)))timer=setTimeout(tick,Number($('speed').value))}
+
+function humanWaiting(){const j=decider(state);return !state.ended&&j!==null&&isHuman(state,j)}
+function canRollDice(){return !resultOpen()&&state.phase==='move'&&state.actor>0&&humanWaiting()}
+function syncProgress(){
+ if(resultOpen()){$('auto').textContent=running?'Ⅱ 일시정지':'▶ 자동 진행';$('auto').ariaPressed=String(running);$('progress-status').textContent='경매 결과 확인 중 · 창을 닫으면 이어집니다';return}
+
+ $('auto').textContent=running?'Ⅱ 일시정지':'▶ 자동 진행';
+ $('auto').ariaPressed=String(running);
+ $('progress-status').textContent=state.ended?'게임 종료':running?(humanWaiting()?`${state.players[decider(state)].id} 선택 대기 · 선택 후 자동으로 이어집니다`:'AI 행동과 차례 전환을 자동 진행합니다'):'진행 대기 · 자동 진행 또는 내 선택으로 이어가세요';
+}
+function stop(){running=false;clearTimeout(timer);timer=null;syncProgress()}
+function scheduleProgress(delay=Number($('speed').value)){
+ clearTimeout(timer);timer=null;
+ if(!running||state.ended||humanWaiting()||resultOpen())return;
+ timer=setTimeout(tick,delay);
+}
+function resumeProgress(){
+ if(state.ended)return;
+ if(view==='help'||view==='guide')setView('game');
+ running=true;render();scheduleProgress(0);
+}
+function commit(a){
+ try{
+  const next={...state};advance(next,a);assertState(next);const result=makeAuctionResult(state,next,a);
+  snapshots.push(state);if(snapshots.length>80)snapshots.shift();
+  state=next;persist();if(state.ended)stop();render();if(result)showAuctionResult(result);scheduleProgress();return true;
+ }catch(e){stop();toast(e.message);render();return false}
+}
+function choose(a){
+ if(resultOpen()||!humanWaiting())return false;
+ clearTimeout(timer);timer=null;running=true;
+ return commit(a);
+}
+function tick(){
+ timer=null;if(!running||resultOpen())return;if(state.ended){stop();return}
+ if(humanWaiting()){syncProgress();return}
+ commit(aiAction(state));
+}
 function setView(v){if(v==='help'||v==='guide')stop();view=v;['game','finance','history','guide','help'].forEach(k=>$(k+'-view').classList.toggle('hidden',k!==v));document.querySelectorAll('.nav').forEach(b=>b.classList.toggle('active',b.dataset.view===v));if(v==='history')renderHistory();if(v==='finance')renderFinance()}
 function grid(i){if(i<=7)return[8,8-i];if(i<=14)return[15-i,1];if(i<=21)return[1,i-13];return[i-20,8]}
 function tokenAt(markers){
@@ -1048,7 +1156,7 @@ function tokenAt(markers){
  return `<span class="tokens count-${markers.length} ${markers.length>=4?'crowded':''}"${markers.length?` role="group" aria-label="현재 위치: ${names}"`:''}>${markers.map(p=>`<span class="token ${p.cls} ${p.active?'active-token':''}" role="img" aria-label="${p.label}${p.active?' · 현재 차례':''}" title="${p.label}${p.active?' · 현재 차례':''}">${p.id==='X'?'X':p.id.slice(1)}</span>`).join('')}</span>`;
 }
 function renderBoard(){const markers=boardMarkers(state),current=state.actor?state.players[state.actor-1].pos:state.x;let html='';for(let j=0;j<28;j++){const p=state.properties.find(p=>p.id===j),[r,c]=grid(j);html+=`<button class="tile ${p?'type-'+p.type:'corner'} ${selected===j?'selected':''} ${current===j?'current':''}" style="grid-row:${r};grid-column:${c}" data-tile="${j}" aria-controls="inspector" title="${j}번 ${p?assetName(p)+' · 통행료 '+fmt(toll(p)):CORNERS[j]}" aria-label="${j}번 ${p?assetName(p)+' '+p.type+'형, 누적 규모 '+p.x+', 통행료 '+toll(p):CORNERS[j]}">${p?'<span class="strip"></span>':''}<span class="tile-id">${String(j).padStart(2,'0')}</span>${p?`<span class="tile-name">${assetName(p)}</span><span class="tile-price ${sold(p)?'':'unsold'} ${fmt(toll(p)).length>5?'toll-long':''}">${sold(p)?fmt(toll(p)):'미분양'}</span>${ownership(p,ownershipMode)}`:`<span class="corner-icon">${{0:'↗',7:'⚖',14:'♧',21:'✧'}[j]}</span><span class="tile-name">${CORNERS[j]}</span>`}${tokenAt(markers[j])}</button>`}
- const dice=state.dice.length?state.dice:[null,null];html+=`<div class="board-center"><div class="center-kicker">INVEST · VOTE · BUILD</div><div class="skyline" aria-hidden="true">${'<div class="building"></div>'.repeat(5)}</div><div class="city-title">지분의 도시</div><div class="city-subtitle">Equity City</div><div class="center-rule"></div><div class="center-current">${state.ended?'게임 종료':`ROUND ${state.round} · ${ACTORS[state.actor]==='X'?'외부 고객 X':ACTORS[state.actor]}의 차례`}</div><div class="center-phase">${phaseNames[state.phase]}</div><div class="dice-pair">${dice.map(d=>`<span class="die" aria-label="주사위 ${d||'대기'}">${dieFace(d)}</span>`).join('')}</div><div class="dice-caption">${state.dice.length?`이동 합계 <strong>${state.dice[0]+state.dice[1]}</strong>`:'주사위 두 개로 이동'}</div><span class="center-bottom">4 PLAYERS + 1 CUSTOMER / RULES 0.8</span></div>`;$('board').innerHTML=html}
+ const canRoll=canRollDice(),dice=state.dice.length?state.dice:[null,null];html+=`<div class="board-center"><div class="center-kicker">INVEST · VOTE · BUILD</div><div class="skyline" aria-hidden="true">${'<div class="building"></div>'.repeat(5)}</div><div class="city-title">지분의 도시</div><div class="city-subtitle">Equity City</div><div class="center-rule"></div><div class="center-current">${state.ended?'게임 종료':`ROUND ${state.round} · ${ACTORS[state.actor]==='X'?'외부 고객 X':ACTORS[state.actor]}의 차례`}</div><div class="center-phase">${phaseNames[state.phase]}</div><div class="dice-pair">${dice.map(d=>`<button type="button" class="die" data-action="roll" ${canRoll?'':'disabled'} aria-label="${canRoll?'주사위 두 개 굴리기':'주사위 '+(d||'대기')}" title="${canRoll?'눌러서 주사위 두 개를 굴리세요':'내 이동 차례에 누를 수 있습니다'}">${dieFace(d)}</button>`).join('')}</div><div class="dice-caption" aria-live="polite">${canRoll?'주사위를 눌러 굴리세요':state.dice.length?`이동 합계 <strong>${state.dice[0]+state.dice[1]}</strong>`:'주사위 두 개로 이동'}</div><span class="center-bottom">4 PLAYERS + 1 CUSTOMER / RULES 0.8</span></div>`;$('board').innerHTML=html}
 function renderMetrics(){
  const b=aggregateBalance(state),simple=(icon,label,value,unit='')=>`<div class="metric"><span class="metric-icon">${icon}</span><div><small>${label}</small><strong>${value}</strong><em>${unit}</em></div></div>`;
  const balances=`<div class="metric metric-balance" aria-label="전체 개인 자산과 부채"><div class="balance-pair"><div><small>개인 자산 총합</small><strong>${fmt(b.assets)}</strong><span>현금 + 지분 평가액</span></div><div><small>개인 부채 총합</small><strong>${fmt(b.debt)}</strong><span>부채 원금 합계</span></div></div></div>`;
@@ -1066,18 +1174,18 @@ function auctionDetail(){const a=state.auction;return `${property(state).id}번 
 function bundleSummary(){const b=state.bundle;return `P${b.seller+1}의 묶음 · 최저가 ${b.floor}<br>${b.items.map(it=>`${it.id}번 ${assetName(it.id)} ${it.kind==='v'?'보통주':'무의결권'} ${fmt(it.qty)}주`).join(' / ')||'주식 없음'}<br>인수 부채 ${fmt(b.debt)}`}
 function renderDecision(){const j=decider(state),pl=state.players[j],p=property(state),human=isHuman(state,j);let title='',subtext='',body='';$('action-number').textContent=`TURN ${String(state.turn).padStart(3,'0')}`;
  if(state.ended){title='최종 결과';subtext=`P${state.loser+1}의 두 번째 연속 경고로 종료되었습니다.`;body=rankings(state).map(r=>`<div class="result-row"><span>${r.rank}위 · P${r.i+1}${r.i===state.loser?' (탈락)':''}</span><b>${fmt(r.value)}</b></div>`).join('')+btn('새 게임 시작','new');}
- else if(state.phase==='done'){title=`${ACTORS[state.actor]} 차례 완료`;subtext='이번 차례의 모든 정산을 마쳤습니다.';body=btn('다음 차례로 →','next')}
- else if(!human){title=state.actor===0&&state.phase==='move'?'외부 고객의 방문':`${pl?.id||'X'} · ${phaseNames[state.phase]}`;subtext=state.phase==='auction'?auctionDetail():state.phase==='bundleBid'?bundleSummary():state.phase==='move'?'다음 움직임이 도시의 수익을 바꿉니다.':`${phaseNames[state.phase]} 단계를 AI가 처리합니다.`;body=`<span class="ai-badge">${running?'자동 진행 중':'AI 선택 대기'}</span><div class="decision-actions">${btn('이 단계 진행 →','next')}</div>`;if(state.phase==='auction')body+='<p class="hint">제출된 입찰은 모두 확정될 때까지 숨겨집니다.</p>'}
+ else if(state.phase==='done'){title=`${ACTORS[state.actor]} 차례 완료`;subtext=running?'이번 차례의 정산을 마쳤습니다. 자동으로 다음 차례로 넘어갑니다.':'이번 차례의 정산을 마쳤습니다.';body=running?'<span class="ai-badge">다음 차례로 이어지는 중</span>':btn('자동 진행','resume')}
+ else if(!human){title=state.actor===0&&state.phase==='move'?'외부 고객의 방문':`${pl?.id||'X'} · ${phaseNames[state.phase]}`;subtext=state.phase==='auction'?auctionDetail():state.phase==='bundleBid'?bundleSummary():state.phase==='move'?'다음 움직임이 도시의 수익을 바꿉니다.':`${phaseNames[state.phase]} 단계를 AI가 처리합니다.`;body=`<span class="ai-badge">${running?'자동 진행 중':'AI 선택 대기'}</span><div class="decision-actions">${running?'':btn('자동 진행','resume')}</div>`;if(state.phase==='auction')body+='<p class="hint">제출된 입찰은 모두 확정될 때까지 숨겨집니다.</p>'}
  else{title=`${pl.id} · ${phaseNames[state.phase]}`;switch(state.phase){
- case 'move':subtext=pl.travel?'이번 차례에 자유이동권을 사용할 수 있습니다. 주사위를 선택해도 권리는 소모됩니다.':'주사위 두 개의 합만큼 시계방향으로 이동합니다.';body=btn('주사위 굴리기','roll');if(pl.travel)body+=`<form data-form="travel"><label class="field">자유이동 목적지<select id="destination">${Array.from({length:28},(_,k)=>k!==pl.pos?`<option value="${k}">${k}번 · ${CORNERS[k]||assetName(k)+' · '+state.properties.find(p=>p.id===k).type+'형'}</option>`:'').join('')}</select></label><button type="submit" class="outline full">자유이동권 사용 →</button></form>`;break;
+ case 'move':subtext=pl.travel?'이번 차례에 자유이동권을 사용할 수 있습니다. 주사위를 선택해도 권리는 소모됩니다.':'보드 가운데의 주사위를 누르세요. 두 주사위의 합만큼 시계방향으로 이동합니다.';body=btn('주사위 굴리기','roll');if(pl.travel)body+=`<form data-form="travel"><label class="field">자유이동 목적지<select id="destination">${Array.from({length:28},(_,k)=>k!==pl.pos?`<option value="${k}">${k}번 · ${CORNERS[k]||assetName(k)+' · '+state.properties.find(p=>p.id===k).type+'형'}</option>`:'').join('')}</select></label><button type="submit" class="outline full">자유이동권 사용 →</button></form>`;break;
  case 'repay':subtext=`도착 예정 ${state.pending.dest}번 ${CORNERS[state.pending.dest]||assetName(state.pending.dest)} · 월급 전에 원금을 상환합니다.<br>현금 ${fmt(pl.cash)} / 부채 ${fmt(pl.debt)}`;body=`<form data-form="repay">${field('원금 상환액 (소수 또는 분수 입력 가능)','repay',min(pl.cash,pl.debt),'required')}<p class="hint">상환 후 이자 30%와 월급 100을 정산합니다. 이자 100 이상이면 연속 경고입니다.</p><button class="primary full" type="submit">상환 및 출발점 정산</button></form>`;break;
- case 'trade':subtext=`${p.id}번 ${assetName(p)} ${p.type}형 도착 · ${total(p)?`통행료 ${toll(p)} 지급`:'최초 공급'} 전에 지분을 거래할 수 있습니다.`;body=btn('거래 종료 · 다음 단계 →','continue')+tradeForm();break;
+ case 'trade':subtext=`${p.id}번 ${assetName(p)} ${p.type}형 도착 · ${total(p)?`통행료 ${toll(p)} 지급`:'최초 공급'} 전에 지분을 거래할 수 있습니다.`;body=btn('거래 마치고 방문 처리','continue')+tradeForm();break;
  case 'offer':subtext=`미분양 ${p.id}번 ${assetName(p)} ${p.type}형 · ${TYPES[p.type].base}에 보통주 1주를 먼저 살 수 있습니다.`;body=`<div class="decision-actions">${cmp(pl.cash,TYPES[p.type].base)>=0?btn('1주 우선 매수','buy'):''}${btn('매수 없이 경매','decline','outline')}</div>`;break;
  case 'proposal':subtext=`${p.id}번 ${assetName(p)} ${p.type}형 · 누적 규모 x=${p.x} → ${expansion(p).nextX}<br>신주 ${fmt(total(p))}주 발행 · 증축 목표 ${fmt(expansion(p).goal)}<br>성공 후 통행료 ${fmt(toll({...p,x:expansion(p).nextX}))} · 초과 납입은 투자액에 미포함`;body=`<div class="decision-actions">${btn('보통주 발행','propose-v')}${btn('무의결권 발행','propose-u','outline')}${btn('제안 포기','pass','outline')}</div>`;break;
  case 'vote':subtext=`${p.id}번 ${assetName(p)} ${state.proposal==='v'?'보통주 증자':'무의결권 발행'} · ${pl.id} 보유 ${fmt(p.v[j])}/${fmt(total(p))}표<br>가결에는 전체 보통주의 과반 찬성이 필요합니다.`;body=`<div class="decision-actions">${btn('찬성','yes')}${btn('반대','no','outline')}${btn('기권','abstain','outline')}</div>`;break;
- case 'auction':{const a=state.auction;subtext=auctionDetail()+`<br>${pl.id}: 최대 ${fmt(a.limits[j])}장 · 현금 ${fmt(pl.cash)}`;body=`<form data-form="auction">${field('한 주당 가격 목록 (빈칸은 포기)','bids','','placeholder="예: 50, 40 또는 50×100" autocomplete="off"')}<p class="hint">50×100은 50짜리 100장입니다. 전원 확정 후 일괄 공개합니다. 표 수 초과, 현금 초과 등은 규칙에 따라 무효 처리됩니다. 무효 제출은 다시 낼 수 없습니다.</p><button class="primary full" type="submit">${pl.id} 입찰 확정</button></form>`;break}
- case 'bundle':subtext='보유 주식과 부채를 한 묶음으로 경매할 수 있습니다. 한 번 공개하면 철회할 수 없습니다.';body=`<form data-form="bundle"><div class="bundle-list">${state.properties.flatMap(p=>['v','u'].filter(k=>BigInt(p[k][j])>0n).map(k=>`<label class="bundle-item">${p.id}번 ${assetName(p)} ${k==='v'?'보통':'무의결'} (보유 ${fmt(p[k][j])}주)<input aria-label="${p.id}번 ${assetName(p)} ${k==='v'?'보통주':'무의결권'} 수량" inputmode="numeric" pattern="[0-9]+" value="0" data-bundle-id="${p.id}" data-kind="${k}"></label>`)).join('')}</div>${field(`이전할 부채 (보유 ${fmt(pl.debt)})`,'bundle-debt',0,'required')}${field('묶음 최저 총가격 (음수·0 가능, 10단위)','bundle-floor',0,'inputmode="numeric" pattern="-?[0-9]+" required')}<div class="decision-actions"><button class="primary" type="submit">공개 · 경매 개시</button>${btn('경매 포기','skip','outline')}</div></form>`;break;
- case 'bundleBid':subtext=bundleSummary();body=`<form data-form="bundleBid">${field('묶음 전체 입찰가 (음수·0 가능)','bundle-bid','','inputmode="numeric" pattern="-?[0-9]+" placeholder="빈칸은 입찰 포기"')}<p class="hint">양수는 내가 지급, 음수는 매도자가 내게 지급합니다. 낙찰하면 표시된 부채도 인수합니다.</p><button class="primary full" type="submit">${pl.id} 비공개 입찰 확정</button></form>`;break;
+ case 'auction':{const a=state.auction;subtext=auctionDetail()+`<br>${pl.id}: 최대 ${fmt(a.limits[j])}장 · 현금 ${fmt(pl.cash)}`;body=`<form data-form="auction">${field('한 주당 가격 목록 (빈칸은 포기)','bids','','placeholder="예: 50, 40 또는 50×100" autocomplete="off"')}<p class="hint">50×100은 50짜리 100장입니다. 전원 확정 후 일괄 공개합니다. 표 수 초과, 현금 초과 등은 규칙에 따라 무효 처리됩니다. 10 단위가 아닌 가격은 제출 전에 반려하며, 입력을 고쳐 다시 낼 수 있습니다. 수량·현금 한도 위반으로 제출한 무효 입찰은 다시 낼 수 없습니다.</p><p id="auction-bid-error" class="bid-error hidden" role="alert"></p><button class="primary full" type="submit">${pl.id} 입찰 확정</button></form>`;break}
+ case 'bundle':subtext='보유 주식과 부채를 한 묶음으로 경매할 수 있습니다. 한 번 공개하면 철회할 수 없습니다.';body=`<form data-form="bundle"><div class="bundle-list">${state.properties.flatMap(p=>['v','u'].filter(k=>BigInt(p[k][j])>0n).map(k=>`<label class="bundle-item">${p.id}번 ${assetName(p)} ${k==='v'?'보통':'무의결'} (보유 ${fmt(p[k][j])}주)<input aria-label="${p.id}번 ${assetName(p)} ${k==='v'?'보통주':'무의결권'} 수량" inputmode="numeric" pattern="[0-9]+" value="0" data-bundle-id="${p.id}" data-kind="${k}"></label>`)).join('')}</div>${field(`이전할 부채 (보유 ${fmt(pl.debt)})`,'bundle-debt',0,'required')}${field('묶음 최저 총가격 (음수·0 가능, 10단위)','bundle-floor',0,'inputmode="numeric" pattern="-?[0-9]+" required')}<p id="auction-bid-error" class="bid-error hidden" role="alert"></p><div class="decision-actions"><button class="primary" type="submit">공개 · 경매 개시</button>${btn('경매 포기','skip','outline')}</div></form>`;break;
+ case 'bundleBid':subtext=bundleSummary();body=`<form data-form="bundleBid">${field('묶음 전체 입찰가 (음수·0 가능)','bundle-bid','','inputmode="numeric" pattern="-?[0-9]+" placeholder="빈칸은 입찰 포기"')}<p class="hint">양수는 내가 지급, 음수는 매도자가 내게 지급합니다. 낙찰하면 표시된 부채도 인수합니다.</p><p id="auction-bid-error" class="bid-error hidden" role="alert"></p><button class="primary full" type="submit">${pl.id} 비공개 입찰 확정</button></form>`;break;
  }}$('decision').innerHTML=`<h3 class="decision-title">${esc(title)}</h3><p class="decision-sub">${subtext}</p>${body}`;
 }
 function eventHTML(e){return `<div class="event"><small>#${e.turn}<br>${esc(e.actor)}</small><span class="event-kind">${esc(e.kind)}</span><span class="event-text">${esc(namedEvent(e.text))}</span></div>`}
@@ -1100,18 +1208,51 @@ function renderFinance(){
  const fields=[['누적 수입 (현금)','income'],['누적 지출 (현금)','expenses'],['누적 투자액','invested'],['신주 납입액','primary'],['일반 지분 매수','secondary'],['일반 지분 매도 수입','saleProceeds'],['묶음 대금 지급','bundlePaid'],['묶음 대금 수령','bundleReceived'],['월급 총액 (이자 상계 전)','salaryGross'],['월급 실수령액','salaryNet'],['외부 수입 (X 배당)','externalIncome'],['총배당 (X 포함)','dividends'],['발생 이자','interest'],['부채 전환 이자','interestCapitalized'],['통행료 발생액','tolls'],['통행료 현금 지급','tollCash'],['은행 대납 차입','borrowed'],['원금 상환','principalRepaid'],['묶음 부채 인수','debtAssumed'],['묶음 부채 이전','debtTransferred'],['기금 납부 의무액','fundPaid'],['기금 현금 납부','fundCash'],['기금 수령','fundReceived']];
  $('finance-flow-table').innerHTML='<table class="portfolio-table"><thead><tr><th>지표</th>'+[0,1,2,3].map(j=>`<th><i class="player-dot" style="background:${COLORS[j]}"></i>P${j+1}</th>`).join('')+'</tr></thead><tbody>'+fields.map(([label,key])=>`<tr><td>${label}</td>${f.players.map(l=>`<td>${fmt(key==='invested'?invested(l):key==='income'||key==='expenses'?cashTotals(l)[key]:l[key])}</td>`).join('')}</tr>`).join('')+`<tr><td>도시 전체 증축 투자액</td><td colspan="4">${fmt(balanceSnapshot(state).cityInvestment)}</td></tr></tbody></table>`;
 }
-function render(){$('round-order').innerHTML=`<span>ROUND ${state.round} · 선플레이어 P${state.leader+1}</span><span>${roundOrder(state).map(i=>`<b class="${state.actor===i?'active':''}">${ACTORS[i]}</b>`).join(' → ')}</span>`;renderMetrics();renderBoard();renderPlayers();renderDecision();renderInspector();$('recent').innerHTML=state.logs.slice(-4).reverse().map(eventHTML).join('');$('mode-label').textContent=MODE[state.mode];$('seed-label').textContent=`SEED ${state.seed}`;$('seed-label').title=state.seed;$('turn-label').textContent=`TURN ${String(state.turn).padStart(3,'0')} · ${ACTORS[state.actor]}${state.ended?' · 종료':''}`;$('auto').textContent=running?'Ⅱ 일시정지':'▶ 자동 진행';$('auto').disabled=state.ended;$('step').disabled=state.ended;$('undo').disabled=!snapshots.length;if(view==='history')renderHistory();if(view==='finance')renderFinance()}
-function next(){const j=decider(state);if(j!==null&&isHuman(state,j)){if(state.phase==='move'){commit({});return}toast('현재 선택 화면에서 행동을 확정하세요.');$('decision').scrollIntoView({behavior:'smooth',block:'nearest'});return}commit(aiAction(state))}
-function action(name){stop();switch(name){case 'new':openSetup();break;case 'next':next();break;case 'roll':commit({});break;case 'continue':commit({});break;case 'buy':commit({buy:true});break;case 'decline':commit({buy:false});break;case 'propose-v':commit({kind:'v'});break;case 'propose-u':commit({kind:'u'});break;case 'pass':commit({kind:'pass'});break;case 'yes':commit({yes:true});break;case 'no':commit({yes:false});break;case 'abstain':commit({yes:null});break;case 'skip':commit({skip:true});break}}
+function render(){$('round-order').innerHTML=`<span>ROUND ${state.round} · 선플레이어 P${state.leader+1}</span><span>${roundOrder(state).map(i=>`<b class="${state.actor===i?'active':''}">${ACTORS[i]}</b>`).join(' → ')}</span>`;renderMetrics();renderBoard();renderPlayers();renderDecision();renderInspector();$('recent').innerHTML=state.logs.slice(-4).reverse().map(eventHTML).join('');$('mode-label').textContent=MODE[state.mode];$('seed-label').textContent=`SEED ${state.seed}`;$('seed-label').title=state.seed;$('turn-label').textContent=`TURN ${String(state.turn).padStart(3,'0')} · ${ACTORS[state.actor]}${state.ended?' · 종료':''}`;$('auto').textContent=running?'Ⅱ 일시정지':'▶ 자동 진행';$('auto').disabled=state.ended;$('undo').disabled=!snapshots.length;syncProgress();if(view==='history')renderHistory();if(view==='finance')renderFinance()}
+
+function action(name){
+ switch(name){
+ case 'new':openSetup();break;
+ case 'resume':resumeProgress();break;
+ case 'roll':if(canRollDice())choose({});break;
+ case 'continue':choose({});break;
+ case 'buy':choose({buy:true});break;
+ case 'decline':choose({buy:false});break;
+ case 'propose-v':choose({kind:'v'});break;
+ case 'propose-u':choose({kind:'u'});break;
+ case 'pass':choose({kind:'pass'});break;
+ case 'yes':choose({yes:true});break;
+ case 'no':choose({yes:false});break;
+ case 'abstain':choose({yes:null});break;
+ case 'skip':choose({skip:true});break;
+ }
+}
 function openPortfolio(i){stop();portfolioPlayer=i;$('portfolio-dialog-title').textContent=`P${i+1} · 보유 지분 한눈에 보기`;$('portfolio-overview').innerHTML=portfolioOverview(state,i);$('portfolio-dialog-tabs').innerHTML=[0,1,2,3].map(j=>`<button type="button" data-portfolio-player="${j}" aria-pressed="${i===j}" class="${i===j?'primary':'outline'}">P${j+1}</button>`).join('');if(!$('portfolio-dialog').open)$('portfolio-dialog').showModal()}
 
 document.addEventListener('click',e=>{const holding=e.target.closest('[data-open-holdings]');if(holding){openPortfolio(Number(holding.dataset.openHoldings));return}const portfolioTab=e.target.closest('[data-portfolio-player]');if(portfolioTab){openPortfolio(Number(portfolioTab.dataset.portfolioPlayer));return}const player=e.target.closest('[data-open-player]');if(player){financePlayer=Number(player.dataset.openPlayer);$('finance-player').value=String(financePlayer);setView('finance');return}const prop=e.target.closest('[data-property-detail]');if(prop){$('portfolio-dialog').close();selected=Number(prop.dataset.propertyDetail);setView('game');renderBoard();renderInspector();return}const series=e.target.closest('[data-series]');if(series){const i=Number(series.dataset.series);financeIds.has(i)?financeIds.delete(i):financeIds.add(i);renderFinance();return}const v=e.target.closest('[data-view]');if(v){setView(v.dataset.view);return}const tile=e.target.closest('[data-tile]');if(tile){selected=Number(tile.dataset.tile);renderBoard();renderInspector();return}const a=e.target.closest('[data-action]');if(a)action(a.dataset.action)});
-$('decision').addEventListener('submit',e=>{e.preventDefault();stop();const type=e.target.dataset.form;try{switch(type){case 'repay':commit({amount:$('repay').value});break;case 'travel':commit({dest:Number($('destination').value)});break;case 'auction':{const str=$('bids').value.trim().replace(/\s*([×*])\s*/g,'$1');const bids=str?str.split(/[,\s]+/).filter(Boolean).map(token=>{if(!/[×*]/.test(token))return token;const parts=token.split(/[×*]/);if(parts.length!==2)throw Error('반복 입찰은 가격×수량으로 입력하세요.');return {price:parts[0],qty:parts[1]}}):[];commit({bids});break}case 'bundle':commit({debt:$('bundle-debt').value,floor:$('bundle-floor').value,items:[...document.querySelectorAll('[data-bundle-id]')].filter(el=>el.value.trim()!==''&&!/^0+$/.test(el.value)).map(el=>({id:Number(el.dataset.bundleId),kind:el.dataset.kind,qty:el.value}))});break;case 'bundleBid':commit({bid:$('bundle-bid').value===''?null:$('bundle-bid').value});break;case 'trade':{const i=state.actor-1,other=Number($('trade-other').value),buy=$('trade-direction').value==='buy';commit({type:'trade',seller:buy?other:i,buyer:buy?i:other,id:Number($('trade-id').value),kind:$('trade-kind').value,qty:$('trade-qty').value,price:$('trade-price').value,consent:$('trade-consent').checked});break}}}catch(err){toast(err.message)}});
-$('auto').onclick=()=>{if(running){stop();return}running=true;render();tick()};$('step').onclick=()=>{stop();next()};$('undo').onclick=()=>{stop();if(snapshots.length){state=snapshots.pop();persist();render();toast('한 단계 되돌렸습니다. (최대 최근 80단계)')}};$('speed').onchange=()=>{if(running){clearTimeout(timer);timer=setTimeout(tick,Number($('speed').value))}};
-function openSetup(){stop();$('new-mode').value=state.mode;$('new-ai').value=state.ai?.policies?.every(id=>id===state.ai.policies[0])?policyFor(state,0):'legacy';$('new-seed').value=randomSeed();if(!$('setup').open)$('setup').showModal()}
-$('new').onclick=openSetup;$('close-setup').onclick=()=>$('setup').close();$('setup-form').onsubmit=e=>{e.preventDefault();stop();state=createGame($('new-seed').value.trim()||randomSeed(),$('new-mode').value,{preset:$('new-ai').value||'legacy'});financeCursor=null;snapshots=[];selected=1;$('setup').close();setView('game');persist();render();toast('새 테이블이 준비되었습니다.')};
+$('decision').addEventListener('submit',e=>{e.preventDefault();if(!humanWaiting())return;const type=e.target.dataset.form;try{switch(type){case 'repay':choose({amount:$('repay').value});break;case 'travel':choose({dest:Number($('destination').value)});break;case 'auction':{const bids=parseAuctionBids($('bids').value);choose({bids});break}case 'bundle':choose({debt:$('bundle-debt').value,floor:parseAuctionPrice($('bundle-floor').value,{allowNegative:true,allowZero:true}),items:[...document.querySelectorAll('[data-bundle-id]')].filter(el=>el.value.trim()!==''&&!/^0+$/.test(el.value)).map(el=>({id:Number(el.dataset.bundleId),kind:el.dataset.kind,qty:el.value}))});break;case 'bundleBid':choose({bid:parseAuctionPrice($('bundle-bid').value,{allowNegative:true,allowZero:true,allowEmpty:true})});break;case 'trade':{const i=state.actor-1,other=Number($('trade-other').value),buy=$('trade-direction').value==='buy';choose({type:'trade',seller:buy?other:i,buyer:buy?i:other,id:Number($('trade-id').value),kind:$('trade-kind').value,qty:$('trade-qty').value,price:$('trade-price').value,consent:$('trade-consent').checked});break}}}catch(err){showBidError(type,err.message);toast(err.message)}});
+
+$('auto').onclick=()=>{if(running){stop();render()}else resumeProgress()};
+$('undo').onclick=()=>{stop();if(resultOpen())$('auction-result-dialog').close();if(snapshots.length){state=snapshots.pop();persist();render();toast('한 단계 되돌렸습니다. (최대 최근 80단계)')}};
+$('speed').onchange=()=>{if(running)scheduleProgress()};
+function setupInfo(){
+ const mode=$('new-mode').value;
+ for(let i=0;i<4;i++){
+  const select=$('new-ai-'+i),human=mode==='director'||mode==='play'&&i===0;select.disabled=human;
+  $('ai-seat-'+i).textContent=`P${i+1}${human?' · 직접 조작':' · AI'}`;
+  const id=select.value;$('ai-description-'+i).textContent=human?'이 자리는 사용자가 직접 조작합니다.':id==='random'?'시작할 때 새 AI 네 종류 중 하나를 배정합니다.':PROFILES[id]?.description??'이전 버전 전략입니다. 비교 실험용으로 유지합니다.';
+ }
+}
+function fillSetup(preset){
+ const ids=preset==='mixed'?AI_CHOICES:preset==='legacy'?LEGACY_POLICIES:Array(4).fill(preset);
+ if(preset!=='custom')for(let i=0;i<4;i++)$('new-ai-'+i).value=ids[i];setupInfo();
+}
+function openSetup(){stop();if(resultOpen())$('auction-result-dialog').close();$('new-mode').value=state.mode;for(let i=0;i<4;i++)$('new-ai-'+i).value=policyFor(state,i);$('new-ai').value=state.ai?.policies?.every(id=>id===state.ai.policies[0])?policyFor(state,0):'custom';$('new-seed').value=randomSeed();setupInfo();if(!$('setup').open)$('setup').showModal()}
+$('new-ai').onchange=()=>fillSetup($('new-ai').value);$('new-mode').onchange=setupInfo;
+for(let i=0;i<4;i++)$('new-ai-'+i).onchange=()=>{$('new-ai').value='custom';setupInfo()};
+$('new').onclick=openSetup;$('close-setup').onclick=()=>$('setup').close();$('setup-form').onsubmit=e=>{e.preventDefault();stop();state=createGame($('new-seed').value.trim()||randomSeed(),$('new-mode').value,{policies:Array.from({length:4},(_,i)=>$('new-ai-'+i).value||'random')});financeCursor=null;snapshots=[];selected=1;$('setup').close();setView('game');persist();render();toast('새 테이블이 준비되었습니다.');resumeProgress()};
 function download(data,name,type){const url=URL.createObjectURL(new Blob([data],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-$('save').onclick=()=>download(JSON.stringify(saveData(state),null,2),'equity-city-save.json','application/json');$('load').onclick=()=>{stop();$('file').click()};$('file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>20*1024*1024)throw Error('저장 파일은 20MB 이하여야 합니다.');const data=JSON.parse(await file.text());const restored=readSave(data);state=restored;financeCursor=null;snapshots=[];persist();render();toast('저장한 게임을 불러왔습니다.')}catch(err){toast(`불러오기 실패: ${err.message}`)}finally{e.target.value=''}};
+$('save').onclick=()=>download(JSON.stringify(saveData(state),null,2),'equity-city-save.json','application/json');$('load').onclick=()=>{stop();$('file').click()};$('file').onchange=async e=>{const file=e.target.files[0];if(!file)return;stop();if(resultOpen())$('auction-result-dialog').close();try{if(file.size>20*1024*1024)throw Error('저장 파일은 20MB 이하여야 합니다.');const data=JSON.parse(await file.text());const restored=readSave(data);state=restored;financeCursor=null;snapshots=[];persist();render();toast('저장한 게임을 불러왔습니다.')}catch(err){toast(`불러오기 실패: ${err.message}`)}finally{e.target.value=''}};
 $('log-filter').onchange=renderHistory;$('export-log').onclick=()=>{const cell=v=>{let t=String(v);if(/^[=+\-@]/.test(t))t="'"+t;return '"'+t.replaceAll('"','""')+'"'};const rows=[['event','turn','round','leader','actor','kind','text'],...state.logs.map(e=>[e.id,e.turn,e.round,'P'+(e.leader+1),e.actor,e.kind,namedEvent(e.text)])];download('\ufeff'+rows.map(r=>r.map(cell).join(',')).join('\r\n'),'equity-city-events.csv','text/csv;charset=utf-8')};
 if(legacyRaw){$('legacy-notice').classList.remove('hidden');$('legacy-save').onclick=()=>{try{download(JSON.stringify({format:'equity-city-save-v1',savedAt:new Date().toISOString(),state:JSON.parse(legacyRaw)},null,2),'equity-city-rules04-backup.json','application/json')}catch{toast('이전 자동 저장 데이터를 읽지 못했습니다. 원본은 유지됩니다.')}}}
 $('ownership-mode').onchange=()=>{ownershipMode=$('ownership-mode').value==='votes'?'votes':'dividend';renderBoard();renderInspector();if(view==='finance')renderFinance()};
@@ -1129,95 +1270,116 @@ window.addEventListener('beforeunload',()=>persist());render();
 
 $('offline-runtime-status').classList.add('hidden');
 
+function resultOpen(){return Boolean($('auction-result-dialog').open)}
+function showAuctionResult(result){
+ clearTimeout(timer);timer=null;
+ $('auction-result-title').textContent=result.title;
+ $('auction-result-body').innerHTML=renderAuctionResult(result);
+ if(!resultOpen())$('auction-result-dialog').showModal();
+ syncProgress();
+}
+function showBidError(type,message){
+ const id=type==='auction'?'bids':type==='bundleBid'?'bundle-bid':type==='bundle'?'bundle-floor':null;
+ if(!id)return;
+ const input=$(id);input.ariaInvalid='true';
+ if(input.setCustomValidity)input.setCustomValidity(message);
+ $('auction-bid-error').textContent=message;$('auction-bid-error').classList.remove('hidden');
+ if(input.focus)input.focus();if(input.reportValidity)input.reportValidity();
+}
+$('decision').addEventListener('input',e=>{
+ if(!['bids','bundle-bid','bundle-floor'].includes(e.target.id))return;
+ e.target.ariaInvalid='false';if(e.target.setCustomValidity)e.target.setCustomValidity('');
+ $('auction-bid-error').classList.add('hidden');
+});
+$('close-auction-result').onclick=()=>$('auction-result-dialog').close();
+$('continue-auction-result').onclick=()=>$('auction-result-dialog').close();
+$('auction-result-dialog').addEventListener('close',()=>{syncProgress();scheduleProgress(0)});
+
 Object.assign(exports,{});
 },
-"ai.js":function(exports,__require){
-// Deterministic public-information policies. No DOM, dice RNG or sealed bid access.
-const {decider,property,sold,total,toll,TYPES,expansion,allocate,priority}=__require("rules-engine.js");
-const {q,add,sub,mul,div,cmp,min,floor}=__require("money.js");
-const {legacyAction}=__require("ai-legacy.js");
+"auction-results.js":function(exports,__require){
+const {allocate,priority}=__require("rules-engine.js");
+const {q,add,sub,cmp,fmt}=__require("money.js");
+const {assetName}=__require("assets.js");
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sum=values=>values.reduce((a,b)=>add(a,b),q(0));
+const signed=v=>(cmp(v,0)>0?'+':'')+fmt(v);
+const bidText=rows=>rows.length?rows.map(b=>typeof b==='object'?String(b.price)+(String(b.qty)==='1'?'':'×'+b.qty):String(b)).join(', '):'입찰 포기';
 
-const LEGACY_POLICIES=['legacy-balanced','legacy-cautious','legacy-growth','legacy-reserve'];
-const PROFILES=Object.freeze({
- 'balanced-v1':{label:'균형형 v1 · 실험',reserve:100,rentBuffer:'1',valuation:'22/7',bidFraction:'4/5'},
- 'cautious-v1':{label:'신중형 v1 · 실험',reserve:150,rentBuffer:'3/2',valuation:'20/7',bidFraction:'4/5'},
- 'growth-v1':{label:'성장형 v1 · 실험',reserve:60,rentBuffer:'3/4',valuation:'24/7',bidFraction:'4/5'},
- ...Object.fromEntries(LEGACY_POLICIES.map((id,i)=>[id,{label:['기존 균형형','기존 신중형','기존 적극형','기존 유보형'][i],legacy:i}]))
-});
-function validateAIConfig(config){if(config===undefined)return;if(!config||config.schema!==1||!Array.isArray(config.policies)||config.policies.length!==4||config.policies.some(id=>!Object.hasOwn(PROFILES,id)))throw Error('지원하지 않는 AI 전략 설정입니다.')}
-function newAIConfig(options={}){const policies=options.policies??(!options.preset||options.preset==='legacy'?LEGACY_POLICIES:Array(4).fill(options.preset));const config={schema:1,policies:[...policies]};validateAIConfig(config);return config}
-const policyFor=(s,i)=>(s.ai?.policies??LEGACY_POLICIES)[i];
-const policyLabel=(s,i)=>PROFILES[policyFor(s,i)]?.label??'AI';
-function publicAIState(s){
- const view={};for(const k of ['phase','actor','round','leader','proposal','queue','proposers','players','properties','x','pending','fund','payer'])if(s[k]!==undefined)view[k]=structuredClone(s[k]);
- if(s.auction){const {kind,count,goal,base,priorBuyer,limits}=s.auction;view.auction={kind,count,goal,base,priorBuyer,limits:[...limits]}}
- if(s.bundle){const {seller,debt,floor,items}=s.bundle;view.bundle={seller,debt,floor,items:structuredClone(items)}}
- return view;
+function parseAuctionPrice(raw,{allowNegative=false,allowZero=false,allowEmpty=false}={}){
+ const text=String(raw).trim();if(!text&&allowEmpty)return null;
+ if(!/^-?\d+$/.test(text))throw Error('입찰가격은 10 단위의 정수로 입력하세요. 예: 30, 40, 50');
+ const value=BigInt(text);
+ if(value%10n!==0n)throw Error('입찰가격은 10 단위로 입력하세요. 예: 30, 40, 50. 입력값: '+text);
+ if(!allowNegative&&value<0n||!allowZero&&value===0n)throw Error('신주 입찰가격은 10 이상의 양수로 입력하세요. 입찰을 포기하려면 빈칸으로 두세요.');
+ return value.toString();
 }
-const positive=x=>cmp(x,0)>0?q(x):q(0);
-const maximum=(a,b)=>cmp(a,b)>=0?q(a):q(b);
-function expectedToll(s,i){let sum=q(0);for(let d=2;d<=12;d++){const p=s.properties.find(p=>p.id===(s.players[i].pos+d)%28);if(p&&sold(p))sum=add(sum,mul(toll(p),BigInt(6-Math.abs(7-d))))}return div(sum,36)}
-function investmentBudget(s,i,profile=PROFILES[policyFor(s,i)]){
- const pl=s.players[i];let reserve=maximum(profile.reserve,mul(expectedToll(s,i),profile.rentBuffer));
- if(pl.warnings||cmp(pl.debt,'1000/3')>=0)reserve=add(reserve,pl.debt);
- return positive(sub(pl.cash,reserve));
-}
-function post(p){return {...p,x:expansion(p).nextX}}
-function unitValue(p,profile,after=false){return div(mul(toll(after?post(p):p),profile.valuation),total(p)+total(p,'u')+(after?total(p):0n))}
-function bids(s,i,p,profile,kind,quantity){
- const initial=kind==='initial',limit=initial?2n:kind==='v'?BigInt(p.v[i])+1n:2n*BigInt(p.v[i]);
- if(!limit)return [];
- const fair=initial?div(mul(TYPES[p.type].t0,profile.valuation),5):unitValue(p,profile,true);
- const price=floor(div(mul(fair,profile.bidFraction),10))*10n,minimum=BigInt(initial?TYPES[p.type].base:10);
- if(price<minimum)return [];
- const budget=floor(div(investmentBudget(s,i,profile),price));
- const qty=[limit,BigInt(quantity),budget].reduce((a,b)=>a<b?a:b);
- return qty>0n?[{price:String(price),qty:String(qty)}]:[];
-}
-function forecastIssue(s,i,kind,profile=PROFILES[policyFor(s,i)]){
- const p=property(s),e=expansion(p),n=total(p),limits=p.v.map(v=>String(kind==='v'?BigInt(v)+1n:2n*BigInt(v)));
- // Counterpart behavior is an explicit observer-model assumption, not their hidden submissions.
- const books=s.players.map((_,j)=>bids(s,j,p,profile,kind,n));
- const wins=allocate(books,limits,s.players.map(p=>p.cash),n,10,priority(s));
- const count=wins.reduce((a,w)=>a+BigInt(w.qty),0n),proceeds=wins.reduce((a,w)=>a+BigInt(w.qty)*BigInt(w.price),0n);
- const own=wins.filter(w=>w.i===i),shares=own.reduce((a,w)=>a+BigInt(w.qty),0n),cost=own.reduce((a,w)=>a+BigInt(w.qty)*BigInt(w.price),0n);
- const held=BigInt(p.v[i])+BigInt(p.u[i]);
- const gain=sub(sub(mul(unitValue(p,profile,true),held+shares),mul(unitValue(p,profile),held)),cost);
- return {feasible:count===n&&cmp(proceeds,e.goal)>=0,gain,shares:String(shares),cost:String(cost)};
-}
-function destination(s,i){
- const pl=s.players[i];let best=null;
- for(let id=0;id<28;id++){
-  if(id===pl.pos)continue;const crosses=id<=pl.pos;let score=q(0),warning=false,death=false;
-  if(crosses){const remaining=sub(pl.debt,min(pl.cash,pl.debt)),interest=mul(remaining,'3/10');warning=cmp(interest,100)>=0;death=warning&&pl.warnings>=1;score=sub(100,interest)}
-  const p=s.properties.find(p=>p.id===id);
-  if(p&&sold(p))score=sub(score,mul(toll(p),div(total(p)+total(p,'u')-BigInt(p.v[i])-BigInt(p.u[i]),total(p)+total(p,'u'))));
-  if(id===14)score=add(score,cmp(s.fund,0)>0&&s.payer!==i?s.fund:-50);
-  const candidate={id,score,death,warning,distance:(id-pl.pos+28)%28};
-  if(!best||Number(death)<Number(best.death)||death===best.death&&(Number(warning)<Number(best.warning)||warning===best.warning&&(cmp(score,best.score)>0||cmp(score,best.score)===0&&candidate.distance<best.distance)))best=candidate;
- }
- return {dest:best.id};
-}
-function acceptTrade(s,a,other){const p=s.properties.find(p=>p.id===Number(a.id));if(!p||!sold(p))return false;const valuation=mul(div(mul(toll(p),'20/7'),total(p)+total(p,'u')),BigInt(a.qty));return other===a.buyer?cmp(a.price,valuation)<=0:cmp(a.price,valuation)>=0}
-function aiAction(state,options={}){
- const j=decider(state);if(j===null||j<0)return {};
- const id=options.policy??policyFor(state,j),profile=PROFILES[id];if(!profile)throw Error('지원하지 않는 AI 전략입니다.');
- const s=publicAIState(state);if(profile.legacy!==undefined)return legacyAction(s,profile.legacy);
- const pl=s.players[j],p=property(s);
- switch(s.phase){
- case 'move':return pl.travel?destination(s,j):{};
- case 'repay':return {amount:min(pl.cash,pl.debt)};
- case 'trade':return {};
- case 'offer':return {buy:cmp(investmentBudget(s,j,profile),TYPES[p.type].base)>=0};
- case 'proposal':{let best=null;for(const kind of ['v','u']){const f=forecastIssue(s,j,kind,profile);if(f.feasible&&cmp(f.gain,0)>=0&&(!best||cmp(f.gain,best.gain)>0))best={kind,...f}}return {kind:best?.kind??'pass'}}
- case 'vote':{const f=forecastIssue(s,j,s.proposal,profile);return {yes:f.feasible&&cmp(f.gain,0)>=0}}
- case 'auction':return {bids:bids(s,j,p,profile,s.auction.kind,s.auction.count)};
- case 'bundle':case 'bundleBid':return legacyAction(s,0);
- default:return {};
- }
+function parseAuctionBids(raw){
+ const text=String(raw).trim().replace(/\s*([×*])\s*/g,'$1');if(!text)return [];
+ return text.split(/[,\s]+/).filter(Boolean).map(token=>{
+  const parts=token.split(/[×*]/);
+  if(parts.length>2)throw Error('반복 입찰은 가격×수량으로 입력하세요. 예: 50×3');
+  const price=parseAuctionPrice(parts[0]);
+  if(parts.length===1)return price;
+  if(!/^\d+$/.test(parts[1])||BigInt(parts[1])<=0n)throw Error('반복 입찰 수량은 양의 정수로 입력하세요.');
+  return {price,qty:BigInt(parts[1]).toString()};
+ });
 }
 
-Object.assign(exports,{LEGACY_POLICIES,PROFILES,acceptTrade,aiAction,forecastIssue,investmentBudget,newAIConfig,policyFor,policyLabel,publicAIState,validateAIConfig});
+function makeAuctionResult(before,after,action={}){
+ if(before.phase==='auction'&&before.auction&&!after.auction){
+  const a=before.auction,id=before.actor?before.players[before.actor-1].pos:before.x;
+  const old=before.properties.find(p=>p.id===id),p=after.properties.find(p=>p.id===id);
+  const books=structuredClone(a.bids);books[before.queue[0]]=structuredClone(action.bids??[]);
+  const selected=allocate(books,a.limits,before.players.map(pl=>pl.cash),a.count,a.base,priority(before));
+  const quantity=selected.reduce((n,b)=>n+BigInt(b.qty),0n).toString();
+  const selectedTotal=selected.reduce((n,b)=>n+BigInt(b.qty)*BigInt(b.price),0n).toString();
+  const initial=a.kind==='initial',success=initial?BigInt(p.n0)>0n:p.x!==old.x,k=a.kind==='u'?'u':'v';
+  const rows=before.players.map((pl,i)=>({
+   player:pl.id,bids:bidText(books[i]),qty:(BigInt(p[k][i])-BigInt(old[k][i])).toString(),
+   paid:sub(pl.cash,after.players[i].cash),
+   prices:success?selected.filter(w=>w.i===i).map(w=>({price:w.price,qty:w.qty})):[]
+  }));
+  return {type:'shares',kind:a.kind,title:id+'번 '+assetName(id)+' · '+(initial?'최초 공급':a.kind==='v'?'보통주 발행':'무의결권 발행'),
+   status:success?(initial?'최초 공급 완료':'발행 완료'):(initial?'유찰 · 미분양 유지':'발행 실패'),
+   success,initial,rows,count:a.count,selectedQuantity:quantity,selectedTotal,goal:a.goal,
+   paidTotal:sum(rows.map(r=>r.paid)),priorBuyer:a.priorBuyer,unallocated:(BigInt(a.count)-BigInt(quantity)).toString()
+  };
+ }
+ if(before.phase==='bundleBid'&&before.bundle&&!after.bundle){
+  const b=before.bundle,books=[...b.bids];books[before.queue[0]]=action.bid===undefined||action.bid===null||action.bid===''?null:String(action.bid);
+  const winner=before.players.findIndex((pl,i)=>i!==b.seller&&(
+   cmp(after.players[i].debt,pl.debt)>0||b.items.some(it=>BigInt(after.properties.find(p=>p.id===it.id)[it.kind][i])>BigInt(before.properties.find(p=>p.id===it.id)[it.kind][i]))
+  ));
+  const rows=before.players.map((pl,i)=>({player:pl.id,bid:i===b.seller?'매도자':books[i]===null?'입찰 포기':books[i],winner:i===winner,
+   cash:sub(after.players[i].cash,pl.cash),debt:sub(after.players[i].debt,pl.debt)}));
+  return {type:'bundle',title:'P'+(b.seller+1)+'의 묶음 경매',status:winner<0?'유찰 · 이전 없음':'P'+(winner+1)+' 낙찰',success:winner>=0,
+   seller:b.seller,winner,price:winner<0?null:books[winner],debt:b.debt,items:b.items,rows};
+ }
+ return null;
+}
+
+function renderAuctionResult(r){
+ const head='<div class="auction-result-status '+(r.success?'success':'failed')+'">'+esc(r.status)+'</div>';
+ if(r.type==='shares'){
+  const note=r.success?(r.initial?'경매 미판매분 '+fmt(r.unallocated)+'주는 소각됩니다.':'납입 및 지분 배분을 완료했습니다.'):'발행 조건을 충족하지 못해 이번 경매의 납입액과 배분 지분은 모두 0입니다.';
+  const prior=r.priorBuyer===null?'':'<p class="hint">P'+(r.priorBuyer+1)+'의 우선 매수 1주는 이 경매보다 먼저 취득한 지분으로, 아래 낙찰 수량·납입액에는 포함하지 않습니다.</p>';
+  return head+'<div class="auction-result-kpis"><span>선정 수량<strong>'+fmt(r.selectedQuantity)+' / '+fmt(r.count)+'주</strong></span><span>실제 납입 합계<strong>'+fmt(r.paidTotal)+'</strong></span>'+(r.initial?'':'<span>모집 목표<strong>'+fmt(r.goal)+'</strong></span>')+'</div>'+
+   '<p>'+esc(note)+'</p>'+(!r.success&&!r.initial?'<p class="hint">선정 후보의 대금 합계 '+fmt(r.selectedTotal)+' · 필요 수량 '+fmt(r.count)+'주. 후보 선정은 실제 낙찰·납입과 다릅니다.</p>':'')+
+   '<div class="auction-result-table"><table><thead><tr><th>플레이어</th><th>제출 입찰</th><th>낙찰 수량</th><th>낙찰 가격별 수량</th><th>납입액</th></tr></thead><tbody>'+
+   r.rows.map(row=>'<tr><th>'+esc(row.player)+'</th><td>'+esc(row.bids)+'</td><td>'+fmt(row.qty)+'주</td><td>'+esc(row.prices.length?row.prices.map(p=>fmt(p.price)+' × '+fmt(p.qty)+'주').join(', '):'—')+'</td><td>'+fmt(row.paid)+'</td></tr>').join('')+
+   '</tbody></table></div>'+prior;
+ }
+ const transfer=r.success?(cmp(r.price,0)>0?'P'+(r.winner+1)+' → P'+(r.seller+1):cmp(r.price,0)<0?'P'+(r.seller+1)+' → P'+(r.winner+1):'현금 이전 없음'):'낙찰자 없음';
+ const lots=r.items.length?r.items.map(it=>it.id+'번 '+assetName(it.id)+' '+(it.kind==='v'?'보통주':'무의결권')+' '+fmt(it.qty)+'주').join(' / '):'주식 없음';
+ return head+'<div class="auction-result-kpis"><span>낙찰가<strong>'+(r.price===null?'—':fmt(r.price))+'</strong></span><span>인수 부채<strong>'+fmt(r.success?r.debt:0)+'</strong></span></div>'+
+  '<p>'+esc(lots)+'</p><p class="hint">'+esc(transfer)+(r.success?' · 표시된 주식과 부채가 함께 이전되었습니다.':' · 주식·부채·현금은 이전되지 않았습니다.')+'</p>'+
+  '<div class="auction-result-table"><table><thead><tr><th>플레이어</th><th>제출 입찰</th><th>결과</th><th>현금 변화</th><th>부채 변화</th></tr></thead><tbody>'+
+  r.rows.map(row=>'<tr><th>'+esc(row.player)+'</th><td>'+esc(row.bid)+'</td><td>'+(row.winner?'낙찰':'—')+'</td><td>'+signed(row.cash)+'</td><td>'+signed(row.debt)+'</td></tr>').join('')+
+  '</tbody></table></div>';
+}
+
+Object.assign(exports,{makeAuctionResult,parseAuctionBids,parseAuctionPrice,renderAuctionResult});
 },
 "rules-engine.js":function(exports,__require){
 // Authoritative v0.8 rule transitions. No AI policy imports or strategy decisions.
@@ -1523,6 +1685,123 @@ function assertFinance(f,deep=false){
 
 Object.assign(exports,{FLOW_KEYS,assertFinance,cashTotals,checkpoint,emptyLedger,flow,initFinance,invested});
 },
+"assets.js":function(exports,__require){
+// Display names only. Tile IDs, types, economics and saved game identities stay fixed.
+const DISTRICTS={A:{region:'홍대·마포',names:['홍대','망원','합정','연남','상수','공덕']},B:{region:'서울 도심',names:['광화문','종로','을지로','명동','인사동','혜화']},C:{region:'성동·동부',names:['성수','서울숲','뚝섬','왕십리','건대','잠실']},D:{region:'강남권',names:['신사','압구정','청담','삼성','역삼','반포']}};
+function assetName(propertyOrId){const id=Number(typeof propertyOrId==='object'?propertyOrId.id:propertyOrId);return Number.isInteger(id)&&id>0&&id<28&&id%7?DISTRICTS['ABCD'[Math.floor(id/7)]].names[id%7-1]:''}
+function namedEvent(text){return text.replace(/(\d+)번/g,(match,id)=>assetName(id)?`${id}번 ${assetName(id)}`:match)}
+function dieFace(value){
+  if(value===null||value===undefined)return '<span class="die-wait" aria-hidden="true">·</span>';
+  const positions={1:[[50,50]],2:[[25,25],[75,75]],3:[[25,25],[50,50],[75,75]],4:[[25,25],[75,25],[25,75],[75,75]],5:[[25,25],[75,25],[50,50],[25,75],[75,75]],6:[[25,25],[75,25],[25,50],[75,50],[25,75],[75,75]]};
+  return `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">${positions[value].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="9" fill="currentColor"/>`).join('')}</svg>`;
+}
+
+Object.assign(exports,{DISTRICTS,assetName,dieFace,namedEvent});
+},
+"ai.js":function(exports,__require){
+// Deterministic public-information policies. No DOM, dice RNG or sealed bid access.
+const {decider,property,sold,total,toll,TYPES,expansion,allocate,priority}=__require("rules-engine.js");
+const {q,add,sub,mul,div,cmp,min,floor}=__require("money.js");
+const {legacyAction}=__require("ai-legacy.js");
+const {STRATEGIES,strategyAction,strategyBudget}=__require("ai-strategies.js");
+
+const LEGACY_POLICIES=['legacy-balanced','legacy-cautious','legacy-growth','legacy-reserve'];
+const PROFILES=Object.freeze({
+ ...STRATEGIES,
+ 'balanced-v1':{label:'균형형 v1 · 실험',reserve:100,rentBuffer:'1',valuation:'22/7',bidFraction:'4/5'},
+ 'cautious-v1':{label:'신중형 v1 · 실험',reserve:150,rentBuffer:'3/2',valuation:'20/7',bidFraction:'4/5'},
+ 'growth-v1':{label:'성장형 v1 · 실험',reserve:60,rentBuffer:'3/4',valuation:'24/7',bidFraction:'4/5'},
+ ...Object.fromEntries(LEGACY_POLICIES.map((id,i)=>[id,{label:['기존 균형형','기존 신중형','기존 적극형','기존 유보형'][i],legacy:i}]))
+});
+function validateAIConfig(config){if(config===undefined)return;if(!config||config.schema!==1||!Array.isArray(config.policies)||config.policies.length!==4||config.policies.some(id=>!Object.hasOwn(PROFILES,id)))throw Error('지원하지 않는 AI 전략 설정입니다.')}
+const AI_CHOICES=Object.freeze(Object.keys(STRATEGIES));
+function resolvePolicies(seed,choices){
+ if(!Array.isArray(choices)||choices.length!==4||choices.some(id=>id!=='random'&&!Object.hasOwn(PROFILES,id)))throw Error('지원하지 않는 AI 전략 설정입니다.');
+ let h=2166136261;for(const c of 'AI-ASSIGN:'+String(seed))h=Math.imul(h^c.charCodeAt(0),16777619);h=(h>>>0)||1;
+ const draw=n=>{h^=h<<13;h^=h>>>17;h^=h<<5;h>>>=0;return h%n};
+ const used=new Set(choices.filter(id=>id!=='random'));let bag=[];
+ return choices.map(id=>{if(id!=='random')return id;if(!bag.length){bag=AI_CHOICES.filter(p=>!used.has(p));if(!bag.length)bag=[...AI_CHOICES];for(let i=bag.length-1;i>0;i--){const j=draw(i+1);[bag[i],bag[j]]=[bag[j],bag[i]]}}const selected=bag.pop();used.add(selected);return selected});
+}
+function newAIConfig(options={}){const choices=options.policies??(options.preset==='mixed'?AI_CHOICES:!options.preset||options.preset==='legacy'?LEGACY_POLICIES:Array(4).fill(options.preset));const config={schema:1,policies:resolvePolicies(options.seed??'',choices)};validateAIConfig(config);return config}
+const policyFor=(s,i)=>(s.ai?.policies??LEGACY_POLICIES)[i];
+const policyLabel=(s,i)=>PROFILES[policyFor(s,i)]?.label??'AI';
+function publicAIState(s){
+ const view={};for(const k of ['mode','phase','actor','round','leader','proposal','queue','proposers','players','properties','x','pending','fund','payer'])if(s[k]!==undefined)view[k]=structuredClone(s[k]);
+ if(s.auction){const {kind,count,goal,base,priorBuyer,limits}=s.auction;view.auction={kind,count,goal,base,priorBuyer,limits:[...limits]}}
+ if(s.bundle){const {seller,debt,floor,items}=s.bundle;view.bundle={seller,debt,floor,items:structuredClone(items)}}
+ return view;
+}
+const positive=x=>cmp(x,0)>0?q(x):q(0);
+const maximum=(a,b)=>cmp(a,b)>=0?q(a):q(b);
+function expectedToll(s,i){let sum=q(0);for(let d=2;d<=12;d++){const p=s.properties.find(p=>p.id===(s.players[i].pos+d)%28);if(p&&sold(p))sum=add(sum,mul(toll(p),BigInt(6-Math.abs(7-d))))}return div(sum,36)}
+function investmentBudget(s,i,profile=PROFILES[policyFor(s,i)]){
+ const pl=s.players[i];let reserve=maximum(profile.reserve,mul(expectedToll(s,i),profile.rentBuffer));
+ if(pl.warnings||cmp(pl.debt,'1000/3')>=0)reserve=add(reserve,pl.debt);
+ return positive(sub(pl.cash,reserve));
+}
+function post(p){return {...p,x:expansion(p).nextX}}
+function unitValue(p,profile,after=false){return div(mul(toll(after?post(p):p),profile.valuation),total(p)+total(p,'u')+(after?total(p):0n))}
+function bids(s,i,p,profile,kind,quantity){
+ const initial=kind==='initial',limit=initial?2n:kind==='v'?BigInt(p.v[i])+1n:2n*BigInt(p.v[i]);
+ if(!limit)return [];
+ const fair=initial?div(mul(TYPES[p.type].t0,profile.valuation),5):unitValue(p,profile,true);
+ const price=floor(div(mul(fair,profile.bidFraction),10))*10n,minimum=BigInt(initial?TYPES[p.type].base:10);
+ if(price<minimum)return [];
+ const budget=floor(div(investmentBudget(s,i,profile),price));
+ const qty=[limit,BigInt(quantity),budget].reduce((a,b)=>a<b?a:b);
+ return qty>0n?[{price:String(price),qty:String(qty)}]:[];
+}
+function forecastIssue(s,i,kind,profile=PROFILES[policyFor(s,i)]){
+ const p=property(s),e=expansion(p),n=total(p),limits=p.v.map(v=>String(kind==='v'?BigInt(v)+1n:2n*BigInt(v)));
+ // Counterpart behavior is an explicit observer-model assumption, not their hidden submissions.
+ const books=s.players.map((_,j)=>bids(s,j,p,profile,kind,n));
+ const wins=allocate(books,limits,s.players.map(p=>p.cash),n,10,priority(s));
+ const count=wins.reduce((a,w)=>a+BigInt(w.qty),0n),proceeds=wins.reduce((a,w)=>a+BigInt(w.qty)*BigInt(w.price),0n);
+ const own=wins.filter(w=>w.i===i),shares=own.reduce((a,w)=>a+BigInt(w.qty),0n),cost=own.reduce((a,w)=>a+BigInt(w.qty)*BigInt(w.price),0n);
+ const held=BigInt(p.v[i])+BigInt(p.u[i]);
+ const gain=sub(sub(mul(unitValue(p,profile,true),held+shares),mul(unitValue(p,profile),held)),cost);
+ return {feasible:count===n&&cmp(proceeds,e.goal)>=0,gain,shares:String(shares),cost:String(cost)};
+}
+function destination(s,i){
+ const pl=s.players[i];let best=null;
+ for(let id=0;id<28;id++){
+  if(id===pl.pos)continue;const crosses=id<=pl.pos;let score=q(0),warning=false,death=false;
+  if(crosses){const remaining=sub(pl.debt,min(pl.cash,pl.debt)),interest=mul(remaining,'3/10');warning=cmp(interest,100)>=0;death=warning&&pl.warnings>=1;score=sub(100,interest)}
+  const p=s.properties.find(p=>p.id===id);
+  if(p&&sold(p))score=sub(score,mul(toll(p),div(total(p)+total(p,'u')-BigInt(p.v[i])-BigInt(p.u[i]),total(p)+total(p,'u'))));
+  if(id===14)score=add(score,cmp(s.fund,0)>0&&s.payer!==i?s.fund:-50);
+  const candidate={id,score,death,warning,distance:(id-pl.pos+28)%28};
+  if(!best||Number(death)<Number(best.death)||death===best.death&&(Number(warning)<Number(best.warning)||warning===best.warning&&(cmp(score,best.score)>0||cmp(score,best.score)===0&&candidate.distance<best.distance)))best=candidate;
+ }
+ return {dest:best.id};
+}
+function acceptTrade(s,a,other){
+ const p=s.properties.find(p=>p.id===Number(a.id));if(!p||!sold(p))return false;
+ const valuation=mul(div(mul(toll(p),'20/7'),total(p)+total(p,'u')),BigInt(a.qty)),profile=PROFILES[policyFor(s,other)];
+ if(profile?.style&&other===a.buyer)return cmp(a.price,valuation)<=0&&cmp(a.price,strategyBudget(s,other,profile))<=0;
+ return other===a.buyer?cmp(a.price,valuation)<=0:cmp(a.price,valuation)>=0;
+}
+function aiAction(state,options={}){
+ const j=decider(state);if(j===null||j<0)return {};
+ const id=options.policy??policyFor(state,j),profile=PROFILES[id];if(!profile)throw Error('지원하지 않는 AI 전략입니다.');
+ const s=publicAIState(state);if(profile.legacy!==undefined)return legacyAction(s,profile.legacy);
+ if(profile.style){if(s.phase==='move')return s.players[j].travel?destination(s,j):{};if(s.phase==='repay')return {amount:min(s.players[j].cash,s.players[j].debt)};return strategyAction(s,j,profile,a=>acceptTrade(state,a,a.buyer))}
+ const pl=s.players[j],p=property(s);
+ switch(s.phase){
+ case 'move':return pl.travel?destination(s,j):{};
+ case 'repay':return {amount:min(pl.cash,pl.debt)};
+ case 'trade':return {};
+ case 'offer':return {buy:cmp(investmentBudget(s,j,profile),TYPES[p.type].base)>=0};
+ case 'proposal':{let best=null;for(const kind of ['v','u']){const f=forecastIssue(s,j,kind,profile);if(f.feasible&&cmp(f.gain,0)>=0&&(!best||cmp(f.gain,best.gain)>0))best={kind,...f}}return {kind:best?.kind??'pass'}}
+ case 'vote':{const f=forecastIssue(s,j,s.proposal,profile);return {yes:f.feasible&&cmp(f.gain,0)>=0}}
+ case 'auction':return {bids:bids(s,j,p,profile,s.auction.kind,s.auction.count)};
+ case 'bundle':case 'bundleBid':return legacyAction(s,0);
+ default:return {};
+ }
+}
+
+Object.assign(exports,{AI_CHOICES,LEGACY_POLICIES,PROFILES,acceptTrade,aiAction,forecastIssue,investmentBudget,newAIConfig,policyFor,policyLabel,publicAIState,resolvePolicies,validateAIConfig});
+},
 "ai-legacy.js":function(exports,__require){
 // Frozen v7 strategy; style is independent of the deciding seat.
 const {decider,property,sold,total,toll,TYPES,equity}=__require("rules-engine.js");
@@ -1542,15 +1821,159 @@ function legacyAction(s,style=decider(s)){const j=decider(s),pl=s.players[j],p=p
 
 Object.assign(exports,{legacyAction});
 },
+"ai-strategies.js":function(exports,__require){
+// v2 policies: bounded auction search using only the public decision view.
+// All prices, quantities and forecasts use exact rational / BigInt arithmetic.
+const {property,sold,total,toll,TYPES,expansion,allocate,priority,isHuman}=__require("rules-engine.js");
+const {q,add,sub,mul,div,cmp,min,floor,ceil}=__require("money.js");
+const pos=x=>cmp(x,0)>0?q(x):q(0),max=(a,b)=>cmp(a,b)>0?q(a):q(b);
+const tickDown=x=>floor(div(x,10))*10n,tickUp=x=>ceil(div(x,10))*10n;
+const STRATEGIES=Object.freeze({
+ 'strategist-v2':{label:'전략가',description:'예상 배당과 경쟁자의 이득을 비교해 발행 방식과 입찰가를 선택합니다.',style:'strategist',reserve:100,buffer:'1',horizon:6,relative:'1/4'},
+ 'builder-v2':{label:'확장가',description:'보통주 확장과 의결권 확보에 집중하되, 비싼 증축은 중단합니다.',style:'builder',reserve:50,buffer:'3/4',horizon:10,relative:'1/4'},
+ 'investor-v2':{label:'가치투자자',description:'싼 지분과 무의결권 발행을 선호하며, 예상 수익 대비 입찰가를 제한합니다.',style:'investor',reserve:120,buffer:'1',horizon:5,relative:'1/4'},
+ 'guardian-v2':{label:'수비가',description:'통행료와 부채를 먼저 대비하고, 불리한 희석과 위험한 부채 인수를 피합니다.',style:'guardian',reserve:180,buffer:'5/4',horizon:4,relative:'1/2'}
+});
+function reserveCash(s,i,profile){
+ const pl=s.players[i];let next=q(0);
+ for(let d=2;d<=12;d++){const p=s.properties.find(p=>p.id===(pl.pos+d)%28);if(p&&sold(p))next=add(next,mul(toll(p),6-Math.abs(7-d)))}
+ const buffer=max(profile.reserve,mul(div(next,36),profile.buffer));
+ // Keep enough principal to get BELOW the warning boundary at the next GO.
+ const dangerous=pos(sub(pl.debt,pl.warnings?200:250));
+ return add(buffer,dangerous);
+}
+const strategyBudget=(s,i,profile)=>pos(sub(s.players[i].cash,reserveCash(s,i,profile)));
+const quota=(p,i,kind)=>kind==='initial'?2n:kind==='v'?BigInt(p.v[i])+1n:2n*BigInt(p.v[i]);
+function afterProperty(p,kind){return kind==='initial'?p:{...p,x:expansion(p).nextX}}
+function unitValue(p,kind,profile){
+ const initial=kind==='initial',n=initial?5n:total(p)+total(p,'u')+total(p),t=initial?BigInt(TYPES[p.type].t0):toll(afterProperty(p,kind));
+ // Official final mark plus future net dividend premium. This is a spending ceiling, not a target price.
+ return div(mul(t,add('20/7',div(BigInt(profile.horizon)*5n,28))),n);
+}
+function limits(p,kind){return p.v.map((_,i)=>String(quota(p,i,kind)))}
+function cheapPrice(p,kind){return kind==='initial'?BigInt(TYPES[p.type].base):tickUp(div(expansion(p).goal,total(p)))}
+function rowAt(s,i,p,kind,price,budget){const qty=[quota(p,i,kind),kind==='initial'?5n:total(p),floor(div(budget,price))].reduce((a,b)=>a<b?a:b);return qty>0n?[{price:String(price),qty:String(qty)}]:[]}
+function opponentBooks(s,p,kind,premium){
+ const price=cheapPrice(p,kind)+(premium?10n:0n);
+ return s.players.map((pl,i)=>rowAt(s,i,p,kind,price,pos(sub(pl.cash,100))));
+}
+function outcome(s,p,kind,books){
+ const count=kind==='initial'?BigInt(s.auction?.count??5):total(p),wins=allocate(books,limits(p,kind),s.players.map(p=>p.cash),count,kind==='initial'?TYPES[p.type].base:10,priority(s));
+ const shares=[0n,0n,0n,0n],cost=[0n,0n,0n,0n];for(const w of wins){shares[w.i]+=BigInt(w.qty);cost[w.i]+=BigInt(w.qty)*BigInt(w.price)}
+ if(kind!=='initial'&&(shares.reduce((a,b)=>a+b,0n)!==count||cmp(cost.reduce((a,b)=>a+b,0n),expansion(p).goal)<0))return null;
+ return {shares,cost};
+}
+function scoreOutcome(s,i,p,kind,o,profile){
+ if(!o)return q(0);
+ const initial=kind==='initial',oldE=total(p)+total(p,'u'),newE=oldE+o.shares.reduce((a,b)=>a+b,0n),oldT=initial?0n:toll(p),newT=initial?BigInt(TYPES[p.type].t0):toll(afterProperty(p,kind));
+ const horizon=q(profile.horizon),gain=[];
+ // Extra rent from the larger NEXT expansion enabled by issuing common shares.
+ // Use marginal rent, so this option also fades with diminishing returns.
+ let growthOption=0n;if(kind==='v'){const e=expansion(p),delta=total(p)/BigInt(p.n0),x=BigInt(e.nextX);growthOption=toll({...p,x:String(x+2n*delta)})-toll({...p,x:String(x+delta)})}
+ for(let j=0;j<4;j++){
+  const held=BigInt(p.v[j])+BigInt(p.u[j]),oldPart=oldE?div(held,oldE):q(0),newPart=newE?div(held+o.shares[j],newE):q(0);
+  const mark=sub(mul(newT,newPart),mul(oldT,oldPart));
+  // Five visitors per round (four players + X), one expected own payment.
+  const cashFlow=div(sub(mul(newT,sub(mul(newPart,5),1)),mul(oldT,sub(mul(oldPart,5),1))),28);
+  let g=sub(add(mul(mark,'20/7'),mul(cashFlow,horizon)),o.cost[j]);
+  if(kind==='v'){
+   const oldVotes=total(p),newVotes=oldVotes*2n,oldControl=2n*BigInt(p.v[j])>oldVotes,newControl=2n*(BigInt(p.v[j])+o.shares[j])>newVotes;
+   if(oldControl!==newControl)g=add(g,mul(newT,newControl?'1/2':'-1/2'));
+   // Expansionists pay for the faster future growth enabled by common shares.
+   g=add(g,mul(mul(growthOption,newPart),profile.style==='builder'?2:1));
+  }
+  gain.push(g);
+ }
+ const others=div(gain.reduce((v,g,j)=>j===i?v:add(v,g),q(0)),3);
+ return sub(gain[i],mul(others,profile.relative));
+}
+function chooseBids(s,i,p,kind,profile){
+ const budget=strategyBudget(s,i,profile),anchor=cheapPrice(p,kind),ceiling=tickDown(unitValue(p,kind,profile));
+ if(!quota(p,i,kind)||ceiling<anchor||cmp(budget,anchor)<0)return [];
+ // Compare bidding against abstaining in each public opponent scenario.
+ // Losses caused by an already-financed issue are not a reason to abandon protective bids.
+ const canTakeControl=kind==='initial'?BigInt(p.v[i])>0n:kind==='v'&&2n*(BigInt(p.v[i])+quota(p,i,kind))>2n*total(p);
+ const candidates=(profile.style==='strategist'&&canTakeControl?[anchor,anchor+10n]:[anchor]).filter(price=>price<=ceiling),scenarios=[opponentBooks(s,p,kind,false),opponentBooks(s,p,kind,true)];
+ let best=null;
+ for(const price of candidates){const own=rowAt(s,i,p,kind,price,budget);if(!own.length)continue;
+  const scores=scenarios.map(book=>{const abstain=[...book];abstain[i]=[];const b=[...book];b[i]=own;return sub(scoreOutcome(s,i,p,kind,outcome(s,p,kind,b),profile),scoreOutcome(s,i,p,kind,outcome(s,p,kind,abstain),profile))});
+  const score=div(add(scores[0],scores[1]),2);
+  if(!best||cmp(score,best.score)>0)best={bids:own,score};
+ }
+ return best&&cmp(best.score,0)>0?best.bids:[];
+}
+function issueScore(s,i,kind,profile){
+ const p=property(s),own=chooseBids(s,i,p,kind,profile),scores=[];let feasible=0;
+ for(const premium of [false,true]){const books=opponentBooks(s,p,kind,premium);books[i]=own;const o=outcome(s,p,kind,books);if(o)feasible++;scores.push(scoreOutcome(s,i,p,kind,o,profile))}
+ let score=div(add(scores[0],scores[1]),2);
+ if(profile.style==='investor'&&kind==='u'&&cmp(score,0)>0)score=mul(score,'6/5');
+ return {score,feasible};
+}
+function bundleAction(s,i,profile){
+ const pl=s.players[i];if(cmp(pl.debt,0)<=0)return {skip:true};
+ // Sell weak/control-free lots first; a debt transfer also frees future wages.
+ const lots=[];for(const p of s.properties)if(sold(p))for(const kind of ['u','v'])if(BigInt(p[kind][i])){
+  const qty=BigInt(p[kind][i]),value=mul(div(mul(toll(p),'20/7'),total(p)+total(p,'u')),qty),control=kind==='v'&&2n*BigInt(p.v[i])>total(p);
+  lots.push({id:p.id,kind,qty:String(qty),value,control});
+ }
+ lots.sort((a,b)=>Number(a.control)-Number(b.control)||cmp(a.value,b.value));
+ const selected=[];let value=q(0);for(const it of lots){selected.push({id:it.id,kind:it.kind,qty:it.qty});value=add(value,it.value);if(cmp(mul(value,'4/5'),add(pl.debt,100))>=0)break}
+ if(!selected.length)return {skip:true};
+ const debt=min(pl.debt,mul(value,'4/5')),ask=tickDown(pos(sub(mul(value,'4/5'),debt)));
+ return {items:selected,debt,floor:String(ask)};
+}
+function bundleBid(s,i,profile){
+ const b=s.bundle,pl=s.players[i];let value=q(0);for(const it of b.items){const p=s.properties.find(p=>p.id===it.id);value=add(value,mul(div(mul(toll(p),'20/7'),total(p)+total(p,'u')),BigInt(it.qty)))}
+ const ceiling=tickDown(sub(mul(value,'9/10'),b.debt));
+ // An assumed liability is NOT free money: preserve its repayment capacity.
+ const liquid=tickDown(sub(sub(pl.cash,reserveCash(s,i,profile)),b.debt));
+ const bid=ceiling<liquid?ceiling:liquid,sellerLimit=-tickDown(s.players[b.seller].cash);
+ return {bid:bid>=BigInt(b.floor)&&bid>=sellerLimit?String(bid):null};
+}
+function liquidation(s,i,profile,consent){
+ const pl=s.players[i],target=add(reserveCash(s,i,profile),min(pl.debt,250));
+ if(!pl.warnings&&cmp(pl.debt,250)<0)return {};
+ if(cmp(pl.cash,target)>=0)return {};
+ const lots=[];for(const p of s.properties)if(sold(p))for(const kind of ['u','v'])if(BigInt(p[kind][i])){
+  const unit=div(mul(toll(p),'20/7'),total(p)+total(p,'u'));
+  const control=kind==='v'&&2n*BigInt(p.v[i])>total(p);
+  lots.push({p,kind,unit,control});
+ }
+ lots.sort((a,b)=>Number(a.control)-Number(b.control)||Number(a.kind==='v')-Number(b.kind==='v')||cmp(a.unit,b.unit));
+ const buyers=[0,1,2,3].filter(j=>j!==i&&!isHuman(s,j)).sort((a,b)=>-cmp(sub(s.players[a].cash,s.players[a].debt),sub(s.players[b].cash,s.players[b].debt)));
+ for(const lot of lots)for(const buyer of buyers){
+  const price=mul(lot.unit,'4/5');if(cmp(price,0)<=0)continue;
+  const available=pos(sub(sub(s.players[buyer].cash,s.players[buyer].debt),300));
+  const wanted=ceil(div(sub(target,pl.cash),price)),qty=[BigInt(lot.p[lot.kind][i]),wanted,floor(div(available,price))].reduce((a,b)=>a<b?a:b);
+  if(qty>0n){const action={type:'trade',seller:i,buyer,id:lot.p.id,kind:lot.kind,qty:String(qty),price:mul(price,qty),consent:true};if(consent(action))return action}
+ }
+ return {};
+}
+function strategyAction(s,i,profile,consent=()=>true){
+ const p=property(s);
+ switch(s.phase){
+ case 'trade':return liquidation(s,i,profile,consent);
+ case 'offer':return {buy:cmp(strategyBudget(s,i,profile),TYPES[p.type].base)>=0};
+ case 'auction':return {bids:chooseBids(s,i,p,s.auction.kind,profile)};
+ case 'proposal':{if(profile.style==='guardian'&&cmp(sub(s.players[i].debt,s.players[i].cash),200)>0)return {kind:'pass'};const options=['v','u'].map(kind=>({kind,...issueScore(s,i,kind,profile)})).filter(o=>o.feasible&&cmp(o.score,0)>0);options.sort((a,b)=>-cmp(a.score,b.score));if(profile.style==='builder'&&options.some(o=>o.kind==='v'))return {kind:'v'};return {kind:options[0]?.kind??'pass'}}
+ case 'vote':{if(profile.style==='guardian'&&cmp(sub(s.players[i].debt,s.players[i].cash),200)>0)return {yes:false};const o=issueScore(s,i,s.proposal,profile);return {yes:o.feasible>0&&cmp(o.score,0)>0}}
+ case 'bundle':return bundleAction(s,i,profile);
+ case 'bundleBid':return bundleBid(s,i,profile);
+ default:return {};
+ }
+}
+
+Object.assign(exports,{STRATEGIES,chooseBids,issueScore,reserveCash,strategyAction,strategyBudget});
+},
 "engine.js":function(exports,__require){
 // Public compatibility API. Rules and policy have independent modules.
 Object.assign(exports,__require("rules-engine.js"));
 exports.aiAction=__require("ai.js").aiAction;
 const {createGame:createRulesGame,advance:applyRules,trade:applyTrade,assertState:assertRules,isHuman,actorIndex}=__require("rules-engine.js");
 const {newAIConfig,validateAIConfig,acceptTrade}=__require("ai.js");
-function createGame(seed,mode,options={}){const s=createRulesGame(seed,mode);s.ai=newAIConfig(options);return s}
+function createGame(seed,mode,options={}){const s=createRulesGame(seed,mode);s.ai=newAIConfig({...options,seed:s.seed});return s}
 function assertState(s){assertRules(s);validateAIConfig(s.ai)}
-function consent(s,a){if(s.phase!=='trade'||a.type!=='trade')return;const i=actorIndex(s),other=a.seller===i?a.buyer:a.seller;if(isHuman(s,i)&&Number.isInteger(other)&&other>=0&&other<4&&!isHuman(s,other)&&!acceptTrade(s,a,other))throw Error('AI가 제안을 거절했습니다. AI는 평가액 이하로 매수하고 평가액 이상으로 매도합니다.')}
+function consent(s,a){if(s.phase!=='trade'||a.type!=='trade')return;const i=actorIndex(s),other=a.seller===i?a.buyer:a.seller;if(Number.isInteger(other)&&other>=0&&other<4&&!isHuman(s,other)&&!acceptTrade(s,a,other))throw Error('AI가 제안을 거절했습니다. AI의 평가액과 통행료·상환 대비 현금을 확인하세요.')}
 function trade(s,a){consent(s,{...a,type:'trade'});return applyTrade(s,a)}
 function advance(s,a={}){assertState(s);consent(s,a);return applyRules(s,a)}
 
@@ -1616,19 +2039,6 @@ function portfolioOverview(s,i){
 }
 
 Object.assign(exports,{COLORS,METRICS,aggregateBalance,chartSeries,esc,holdings,lineChart,metricValue,ownership,percent,portfolioOverview});
-},
-"assets.js":function(exports,__require){
-// Display names only. Tile IDs, types, economics and saved game identities stay fixed.
-const DISTRICTS={A:{region:'홍대·마포',names:['홍대','망원','합정','연남','상수','공덕']},B:{region:'서울 도심',names:['광화문','종로','을지로','명동','인사동','혜화']},C:{region:'성동·동부',names:['성수','서울숲','뚝섬','왕십리','건대','잠실']},D:{region:'강남권',names:['신사','압구정','청담','삼성','역삼','반포']}};
-function assetName(propertyOrId){const id=Number(typeof propertyOrId==='object'?propertyOrId.id:propertyOrId);return Number.isInteger(id)&&id>0&&id<28&&id%7?DISTRICTS['ABCD'[Math.floor(id/7)]].names[id%7-1]:''}
-function namedEvent(text){return text.replace(/(\d+)번/g,(match,id)=>assetName(id)?`${id}번 ${assetName(id)}`:match)}
-function dieFace(value){
-  if(value===null||value===undefined)return '<span class="die-wait" aria-hidden="true">·</span>';
-  const positions={1:[[50,50]],2:[[25,25],[75,75]],3:[[25,25],[50,50],[75,75]],4:[[25,25],[75,25],[25,75],[75,75]],5:[[25,25],[75,25],[50,50],[25,75],[75,75]],6:[[25,25],[75,25],[25,50],[75,50],[25,75],[75,75]]};
-  return `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">${positions[value].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="9" fill="currentColor"/>`).join('')}</svg>`;
-}
-
-Object.assign(exports,{DISTRICTS,assetName,dieFace,namedEvent});
 },
 "corners.js":function(exports,__require){
 const {fmt}=__require("money.js");
